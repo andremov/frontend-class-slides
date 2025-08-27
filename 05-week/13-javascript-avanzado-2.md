@@ -11,12 +11,6 @@ exportFilename: 13-javascript-avanzado-2
 
 ✏️ 2025-01 ➖ ⏱️ 45 min.
 
-::header::
-Semana 5: Javascript Avanzado II
-
-::footer::
-{{ $page }} / {{ $nav.total }}
-
 ---
 layout: center
 ---
@@ -258,8 +252,8 @@ Para retornar si en una lista de estudiantes se encuentra un estudiante con una 
 
 |  |  |
 |--|--|
-| **Some** | Every |
-| Find | FindIndex|
+| **Some** | ~~Every~~ |
+| ~~Find~~ | ~~FindIndex~~ |
 
 ::header::
 Semana 5: Javascript Avanzado II
@@ -298,8 +292,8 @@ Para retornar la información del estudiante de una lista de estudiantes con una
 
 |  |  |
 |--|--|
-| Some | Every |
-| **Find** | FindIndex|
+| ~~Some~~ | ~~Every~~ |
+| **Find** | ~~FindIndex~~ |
 
 ::header::
 Semana 5: Javascript Avanzado II
@@ -360,7 +354,7 @@ layout: default-center
 # .filter()
 
 ::contents::
-Le pasas una funcion de filtro, y retorna todos los elemento para los que la funcion retorne true.
+Le pasas una funcion de filtro, y retorna todos los elemento para los que la funcion retorne `true`.
 
 ::header::
 Semana 5: Javascript Avanzado II
@@ -488,7 +482,7 @@ layout: default-center
 ::contents::
 Le pasas una funcion de mutación y retorna los elementos tras ser mutados con esa función.
 
-## **Map no filtra**
+## **Map no filtra.**
 
 ::header::
 Semana 5: Javascript Avanzado II
