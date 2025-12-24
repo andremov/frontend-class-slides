@@ -129,173 +129,18 @@ Semana 2: CSS
 layout: default-y-center
 ---
 
-## Selectores Combinados
-
-::contents::
-**Descendiente** (espacio):
-```css
-div p { color: blue; } /* Todos los <p> dentro de <div> */
-```
-
-**Hijo directo** (>):
-```css
-div > p { color: red; } /* Solo <p> hijos directos de <div> */
-```
-
-**Hermano adyacente** (+):
-```css
-h1 + p { color: green; } /* <p> inmediatamente después de <h1> */
-```
-
-**Hermanos generales** (~):
-```css
-h1 ~ p { color: orange; } /* Todos los <p> después de <h1> */
-```
-
-::header::
-Semana 2: CSS
-
-::footer::
-{{ $page }} / {{ $nav.total }}
-
----
-layout: default-y-center
----
-
-## Selectores de Atributo
+## Pseudo-clases Comunes
 
 ::contents::
 ```css
-/* Tiene el atributo */
-[disabled] { opacity: 0.5; }
-
-/* Valor exacto */
-[type="text"] { border: 1px solid gray; }
-
-/* Contiene valor */
-[class*="btn"] { padding: 10px; }
-
-/* Empieza con */
-[href^="https"] { color: green; }
-
-/* Termina con */
-[href$=".pdf"] { color: red; }
-```
-
-::header::
-Semana 2: CSS
-
-::footer::
-{{ $page }} / {{ $nav.total }}
-
----
-layout: default-y-center
----
-
-## Pseudo-clases
-
-::contents::
-```css
-/* Estados de enlaces */
+/* Estados de interacción */
 a:hover { color: red; }
-a:visited { color: purple; }
-a:active { color: orange; }
+button:hover { background: lightblue; }
 
 /* Elementos de formulario */
 input:focus { border-color: blue; }
 input:disabled { opacity: 0.5; }
-
-/* Hijos */
-li:first-child { font-weight: bold; }
-li:last-child { border-bottom: none; }
-li:nth-child(2n) { background: #f0f0f0; }
 ```
-
-::header::
-Semana 2: CSS
-
-::footer::
-{{ $page }} / {{ $nav.total }}
-
----
-layout: default-y-center
----
-
-## Pseudo-elementos
-
-::contents::
-```css
-/* Primera letra y línea */
-p::first-letter { font-size: 2em; }
-p::first-line { font-weight: bold; }
-
-/* Contenido antes y después */
-.quote::before { content: '"'; }
-.quote::after { content: '"'; }
-
-/* Selección de texto */
-::selection { 
-    background: yellow;
-    color: black;
-}
-```
-
-::header::
-Semana 2: CSS
-
-::footer::
-{{ $page }} / {{ $nav.total }}
-
----
-layout: cover
----
-
-# Cómo Agregar CSS
-
----
-layout: default-y-center
----
-
-## 3 Formas de Agregar CSS
-
-::contents::
-**1. CSS Inline** (en el elemento):
-```html
-<p style="color: blue; font-size: 16px;">Texto</p>
-```
-
-**2. CSS Interno** (en el `<head>`):
-```html
-<style>
-    p { color: blue; }
-</style>
-```
-
-**3. CSS Externo** (archivo separado):
-```html
-<link rel="stylesheet" href="styles.css">
-```
-
-::header::
-Semana 2: CSS
-
-::footer::
-{{ $page }} / {{ $nav.total }}
-
----
-layout: default-y-center
----
-
-## Cuál Usar?
-
-::contents::
-❌ **CSS Inline**: Evitar (mezcla contenido y estilo)
-
-⚠️ **CSS Interno**: Solo para páginas pequeñas o prototipos
-
-✅ **CSS Externo**: Recomendado (reutilizable, cacheable, mantenible)
-
-**Mejor práctica**: Usar archivos CSS externos.
 
 ::header::
 Semana 2: CSS
@@ -1289,90 +1134,25 @@ layout: cover
 layout: default-y-center
 ---
 
-## La Cascada
+## La Cascada y Especificidad
 
 ::contents::
-"Cascading" significa que los estilos se aplican en orden:
+Los estilos se aplican en orden de especificidad:
 
-1. **Importancia**: `!important` > estilos normales
-2. **Especificidad**: Qué tan específico es el selector
-3. **Orden**: El último definido gana
+**IDs** (`#id`) > **Clases** (`.class`) > **Elementos** (`div`)
 
 ```css
-p { color: blue; }
-p { color: red; } /* Este gana */
-
-p { color: blue !important; } /* Este gana sobre todo */
-```
-
-⚠️ **Evitar `!important`** excepto en casos muy específicos.
-
-::header::
-Semana 2: CSS
-
-::footer::
-{{ $page }} / {{ $nav.total }}
-
----
-layout: default-y-center
----
-
-## Especificidad
-
-::contents::
-Cálculo de especificidad (de mayor a menor):
-
-1. **Inline styles**: `style=""` → 1000 puntos
-2. **IDs**: `#id` → 100 puntos
-3. **Clases, atributos, pseudo-clases**: `.class`, `[attr]`, `:hover` → 10 puntos
-4. **Elementos, pseudo-elementos**: `div`, `::before` → 1 punto
-
-```css
-/* Especificidad: 1 */
+/* Especificidad baja */
 p { color: blue; }
 
-/* Especificidad: 10 */
-.text { color: red; }
+/* Especificidad media */
+.texto { color: red; }
 
-/* Especificidad: 100 */
-#main { color: green; }
-
-/* Especificidad: 111 */
-#main p.text { color: orange; } /* Este gana */
+/* Especificidad alta */
+#principal { color: green; }
 ```
 
-::header::
-Semana 2: CSS
-
-::footer::
-{{ $page }} / {{ $nav.total }}
-
----
-layout: default-y-center
----
-
-## Herencia
-
-::contents::
-Algunas propiedades se heredan automáticamente a los hijos:
-
-**Se heredan**: `color`, `font-family`, `font-size`, `line-height`, `text-align`, etc.
-
-**NO se heredan**: `margin`, `padding`, `border`, `background`, `width`, `height`, etc.
-
-```css
-body {
-    font-family: Arial;
-    color: #333;
-}
-
-/* Todos los elementos heredan la fuente y color */
-
-div {
-    /* NO hereda padding del body */
-    padding: 20px;
-}
-```
+⚠️ **Evitar `!important`** - rompe la cascada natural.
 
 ::header::
 Semana 2: CSS
@@ -1504,99 +1284,18 @@ layout: cover
 layout: default-y-center
 ---
 
-## Mejores Prácticas - Organización
+## Mejores Prácticas
 
 ::contents::
-✅ **Usar nombres de clase descriptivos** (BEM, SMACSS)
-
-✅ **Organizar CSS** por componentes o secciones
+✅ **Usar nombres de clase descriptivos**
 
 ✅ **Usar variables CSS** para valores reutilizables
 
-✅ **Comentar código** complejo
-
-✅ **Un archivo por componente** (con metodologías modernas)
-
-::header::
-Semana 2: CSS
-
-::footer::
-{{ $page }} / {{ $nav.total }}
-
----
-layout: default-y-center
----
-
-## Mejores Prácticas - Performance
-
-::contents::
-✅ **Minimizar CSS** en producción
-
-✅ **Evitar selectores complejos** y anidamiento excesivo
-
-✅ **Usar `will-change`** con moderación para animaciones
-
-✅ **Evitar `@import`** en CSS (usa `<link>` en HTML)
-
-✅ **Cargar CSS crítico** inline, resto de forma asíncrona
-
-::header::
-Semana 2: CSS
-
-::footer::
-{{ $page }} / {{ $nav.total }}
-
----
-layout: default-y-center
----
-
-## Mejores Prácticas - Código
-
-::contents::
 ✅ **Evitar `!important`**
-
-✅ **Preferir clases sobre IDs** para estilos
 
 ✅ **Mobile First** approach con media queries
 
-✅ **Usar shorthand properties** cuando sea apropiado
-
-✅ **Validar CSS** con herramientas como CSS Validator
-
-::header::
-Semana 2: CSS
-
-::footer::
-{{ $page }} / {{ $nav.total }}
-
----
-layout: default-y-center
----
-
-## Nomenclatura: BEM
-
-::contents::
-**BEM** = Block Element Modifier
-
-```css
-/* Block */
-.card { }
-
-/* Element (hijo del block) */
-.card__title { }
-.card__content { }
-
-/* Modifier (variación del block o element) */
-.card--featured { }
-.card__title--large { }
-```
-
-```html
-<div class="card card--featured">
-    <h2 class="card__title card__title--large">Título</h2>
-    <p class="card__content">Contenido</p>
-</div>
-```
+✅ **Preferir Flexbox y Grid** para layouts
 
 ::header::
 Semana 2: CSS
@@ -1641,29 +1340,6 @@ Semana 2: CSS
 layout: default-y-center
 ---
 
-## Herramientas y Recursos
-
-::contents::
-**Preprocesadores**: Sass, Less, Stylus
-
-**PostCSS**: Autoprefixer, purgeCSS
-
-**Frameworks**: Bootstrap, Tailwind CSS, Bulma
-
-**Herramientas**: CSS Validator, Can I Use
-
-**Documentación**: MDN Web Docs, CSS-Tricks
-
-::header::
-Semana 2: CSS
-
-::footer::
-{{ $page }} / {{ $nav.total }}
-
----
-layout: default-y-center
----
-
 ## Recursos de Aprendizaje
 
 ::contents::
@@ -1671,13 +1347,12 @@ layout: default-y-center
 - MDN Web Docs: https://developer.mozilla.org/es/docs/Web/CSS
 - CSS Tricks: https://css-tricks.com
 
-**Juegos**:
+**Práctica Interactiva**:
 - Flexbox Froggy: https://flexboxfroggy.com
 - Grid Garden: https://cssgridgarden.com
 
 **Herramientas**:
 - Can I Use: https://caniuse.com
-- CSS Grid Generator: https://cssgrid-generator.netlify.app
 
 ::header::
 Semana 2: CSS
