@@ -19,12 +19,13 @@ layout: default-y-center
 ::contents::
 ### Andrés Movilla
 
-Egresado de la Universidad del Norte (2020).
-Junior Full Stack Web Developer (2021).
-Profesor de Frontend (2022).
-Senior Full Stack Web Developer / Tech Lead (2023)
-Plata en Valorant :cry: (2024)
-??? (2025)
+Egresado de la Universidad del Norte (2020). \
+Junior Full Stack Web Developer (2021). \
+Profesor de Backend (2022). \
+Senior Full Stack Web Developer / Tech Lead (2023) \
+Plata en Valorant :cry: (2024) \
+Tesis Terminada (2025) 
+Profesor de Frontend & Maestría (?) (2026) 
 
 ::header::
 Semana 1: Introduccion al curso
