@@ -21,7 +21,7 @@ layout: default-y-center
 
 Egresado de la Universidad del Norte (2020).
 Junior Full Stack Web Developer (2021).
-Profesor de Backend (2022).
+Profesor de Frontend (2022).
 Senior Full Stack Web Developer / Tech Lead (2023)
 Plata en Valorant :cry: (2024)
 ??? (2025)
@@ -40,12 +40,11 @@ layout: default-y-center
 
 ::contents::
 - Javascript y Typescript
-- MongoDB y paradigmas de bases de datos
-- Mongoose y Prisma
-- Rest APIs
-- Docker
-- Autenticacion y Autorizacion
-- Pruebas Unitarias y de Integracion
+- HTML y CSS
+- React y componentes
+- Estado y manejo de datos
+- Routing y navegación
+- Consumo de APIs
 
 ::header::
 Semana 1: Introduccion al curso
@@ -61,10 +60,10 @@ layout: default-y-center
 
 ::contents::
 - (20%) Parcial 1 - Javascript + Algoritmia Basica
-- (20%) Parcial 2 - Javascript Avanzado
-- (10%) Parcial 3 - Git + Node + NPM
-- (20%) Proyecto 1 - Backend individual
-- (20%) Proyecto 2 - Backend grupal
+- (20%) Parcial 2 - React + Componentes
+- (10%) Parcial 3 - Git + HTML + CSS
+- (20%) Proyecto 1 - Frontend individual
+- (20%) Proyecto 2 - Frontend grupal
 - (10%) Quices, Talleres, etc.
 
 ::header::

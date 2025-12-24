@@ -2,11 +2,11 @@
 theme: ../theme
 transition: none
 layout: cover
-title: Introduccion al Desarrollo Back-End
-exportFilename: 03-introduccion-backend
+title: Introduccion al Desarrollo Front-End
+exportFilename: 03-introduccion-frontend
 ---
 
-# Introduccion al <br>desarrollo back-end
+# Introduccion al <br>desarrollo front-end
 
 ✏️ 2025-03 ➖ ⏱️ 15 min.
 
@@ -14,19 +14,13 @@ exportFilename: 03-introduccion-backend
 layout: cover
 ---
 
-# Que es "back-end"?
-
----
-layout: cover
----
-
-# Back-end es aquello que **no** es front-end.
-
----
-layout: cover
----
-
 # Que es "front-end"?
+
+---
+layout: cover
+---
+
+# Front-end es aquello que el usuario **ve** y manipula.
 
 ---
 layout: default-y-center
@@ -52,6 +46,8 @@ layout: default-y-center
 ::contents::
 Se considera "back-end" aquello que **NO** manipula el usuario, o el lado de la aplicacion que **NO** esta bajo el control del usuario.
 
+El front-end interactúa con el back-end para obtener y enviar datos.
+
 ::header::
 Semana 1: Introduccion al curso
 
@@ -68,7 +64,7 @@ layout: default-y-center
 Para las aplicaciones web,
 
 El front-end es la pagina web.
-El back-end es _el resto_.
+El back-end es el servidor que maneja los datos.
 
 ::header::
 Semana 1: Introduccion al curso
@@ -80,13 +76,13 @@ Semana 1: Introduccion al curso
 layout: default-y-center
 ---
 
-## Back-end
+## Front-end
 
 ::contents::
 Para cualquier aplicacion,
 
 El front-end es la interfaz de usuario (y el programa que lo contiene).
-El back-end es _todo lo otro_.
+El back-end es el servidor y la lógica de negocio.
 
 ::header::
 Semana 1: Introduccion al curso
@@ -98,13 +94,15 @@ Semana 1: Introduccion al curso
 layout: default-y-center
 ---
 
-## Back-end
+## Front-end y Back-end
 
 ::contents::
 El front-end tambien es llamado "el cliente", o "client-side".
 
 El back-end tambien es llamado "el servidor", o "server-side".
 
+El front-end se ejecuta en el navegador del usuario.
+
 ::header::
 Semana 1: Introduccion al curso
 
@@ -115,7 +113,7 @@ Semana 1: Introduccion al curso
 layout: default-y-center
 ---
 
-## Back-end
+## Front-end
 
 ::contents::
 En terminos del modelo MVC:
@@ -124,7 +122,7 @@ Vista: Frontend
 
 Modelo: Backend
 
-Controlador: ?
+Controlador: Puede estar en ambos lados
 
 ::header::
 Semana 1: Introduccion al curso
@@ -286,13 +284,11 @@ layout: default-y-center
 ::contents::
 1993: Primera programacion web por lado de servidor.
 
-1995: Nace PHP
+1995: Nace JavaScript (para el navegador)
 
-1995: Nace Apache
+1995: Nace PHP (para el servidor)
 
-1995: Nace MySQL
-
-Luego entonces, nace LAMP stack.
+Comienza la separación entre front-end y back-end.
 
 ::header::
 Semana 1: Introduccion al curso
@@ -309,7 +305,7 @@ layout: default-y-center
 ::contents::
 Una **stack**, o **tech stack**, es el conjunto de tecnologias primarias utilizadas en una aplicacion, sea web o no.
 
-El termino viene de la idea de que las tecnologias estan "stacked", una encima de la otra. _Como una hamburguesa._
+En frontend, la stack incluye HTML, CSS, JavaScript, y frameworks/librerías como React, Vue, o Angular.
 
 ::header::
 Semana 1: Introduccion al curso
@@ -321,16 +317,16 @@ Semana 1: Introduccion al curso
 layout: default-y-center
 ---
 
-## Que es **LAMP stack**?
+## Front-end moderno
 
 ::contents::
-Un servidor con Linux de OS.
+HTML para la estructura.
 
-Corriendo Apache como software servidor.
+CSS para el estilo.
 
-Guardando datos con MySQL.
+JavaScript para la interactividad.
 
-Recibiendo y respondiendo peticiones con PHP/Perl/Python.
+Frameworks como React, Vue, o Angular.
 
 ::header::
 Semana 1: Introduccion al curso
@@ -342,16 +338,16 @@ Semana 1: Introduccion al curso
 layout: default-y-center
 ---
 
-## Que es LAMP stack?
+## Front-end moderno
 
 ::contents::
-**L**inux de OS.
+**H**TML para la estructura.
 
-**A**pache como software servidor.
+**C**SS para el estilo.
 
-**M**ySQL de base de datos.
+**J**avaScript para la interactividad.
 
-**P**HP, **P**erl o **P**ython en el servidor.
+**F**rameworks (React, Vue, Angular).
 
 ::header::
 Semana 1: Introduccion al curso

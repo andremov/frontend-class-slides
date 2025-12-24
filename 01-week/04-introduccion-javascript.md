@@ -36,7 +36,8 @@ layout: default-y-center
 
 ::contents::
 - Desarrollado en diez dias por una persona.
-- Durante la Web 1.0 (< 2004), JS era mas que todo para el navegador.
+- Creado especificamente para el navegador.
+- Durante la Web 1.0 (< 2004), JS era exclusivamente para el navegador.
 
 ::header::
 Semana 1: Introduccion a Javascript
@@ -48,18 +49,19 @@ Semana 1: Introduccion a Javascript
 layout: cover
 ---
 
-# NodeJS y el desarrollo web moderno
+# Frameworks y el desarrollo frontend moderno
 
 ---
 layout: default-y-center
 ---
 
-## NodeJS
+## NodeJS en Frontend
 
 ::contents::
 - Nace en el 2009.
-- Alternativa a Apache. (Programacion de servidor)
-- Usa el motor V8 de Javascript, desarrollado por Google.
+- Permite ejecutar JavaScript fuera del navegador.
+- Usado en frontend para herramientas de build (webpack, vite).
+- Ejecuta bundlers, transpiladores, y development servers.
 
 ::header::
 Semana 1: Introduccion a Javascript
@@ -71,14 +73,16 @@ Semana 1: Introduccion a Javascript
 layout: default-y-center
 ---
 
-## Desarrollo web moderno
+## Desarrollo frontend moderno
 
 ::contents::
-2009: Nace NodeJS y MongoDB.
+2009: Nace NodeJS.
 
-2010: Nace ExpressJS y AngularJS.
+2010: Nace AngularJS (primer framework moderno).
 
-Y nace MEAN stack.
+2013: Nace ReactJS.
+
+Comienza la era de Single Page Applications (SPAs).
 
 ::header::
 Semana 1: Introduccion a Javascript
@@ -90,16 +94,15 @@ Semana 1: Introduccion a Javascript
 layout: default-y-center
 ---
 
-## Que es MEAN stack?
+## Los tres grandes frameworks
 
 ::contents::
-**M**ongoDB, como base de datos.
+**R**eact, creado por Facebook.
 
-**E**xpressJS, como software servidor.
+**V**ue, creado por Evan You.
 
-**A**ngularJS, como framework front-end.
+**A**ngular, creado por Google.
 
-**N**odeJS, como entorno de ejecucion.
 
 ::header::
 Semana 1: Introduccion a Javascript
@@ -114,21 +117,21 @@ layout: default-y-center
 ## Stacks en Web 2.0
 
 ::contents::
-- Ya no es importante/relevante mencionar el OS.
-- El lenguaje esta "sobre-entendido".
-- La stack ahora refleja la tecnologia en front-end y back-end.
-- Los stacks especificos (para cada proyecto o aplicacion) incluyen otros
+- El navegador es el entorno de ejecución.
+- El framework define la stack del frontend.
+- Las herramientas de build (webpack, vite) son esenciales.
+- La stack ahora refleja el framework y las librerías usadas.
 
 ---
 layout: default-y-center
 ---
 
-## Desarrollo web moderno
+## Desarrollo frontend moderno
 
 ::contents::
-2009: Nace NodeJS y MongoDB.
+2009: Nace NodeJS.
 
-2010: Nace ExpressJS y AngularJS.
+2010: Nace AngularJS.
 
 2013: Nace ReactJS.
 
@@ -136,7 +139,7 @@ layout: default-y-center
 
 2016: Nace Angular2.
 
-_Entonces, ME_N stack_
+_La era moderna del frontend_
 
 ::header::
 Semana 1: Introduccion a Javascript
@@ -151,11 +154,11 @@ layout: default-y-center
 ## Entonces, que haremos en este curso?
 
 ::contents::
-- Crear una REST API
-- Crear una base de datos de MongoDB localmente utilizando docker
-- Desplegar una base de datos de MongoDB en la nube
-- Desarrollar pruebas unitarias para nuestro codigo
-- Desarrollar pruebas de integracion para nuestro codigo
+- Crear componentes de React
+- Consumir APIs REST desde el frontend
+- Manejar el estado de la aplicación
+- Desarrollar pruebas unitarias para nuestros componentes
+- Implementar routing y navegación
 - Utilizar un repositorio de Git para manejar versionamiento
 
 ::header::
@@ -173,9 +176,9 @@ layout: default-y-center
 ## Que se necesita para comenzar?
 
 ::contents::
-- NodeJS instalado.
+- NodeJS instalado (para herramientas de build).
 - Algun entorno de desarrollo (como VS Code).
-- Docker instalado.
+- Un navegador moderno (Chrome, Firefox, Edge).
 - Git instalado.
 
 ::header::

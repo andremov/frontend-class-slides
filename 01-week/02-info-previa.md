@@ -17,7 +17,7 @@ layout: default-y-center
 ## Que es difícil?
 
 ::contents::
-- Que es difícil en backend?
+- Que es difícil en frontend?
 - Que es difícil en desarrollo web?
 
 ::header::

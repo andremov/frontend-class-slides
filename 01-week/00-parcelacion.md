@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: syllabus-theme
-title: Parcelacion Dllo. Aplicaciones Web Backend
+title: Parcelacion Dllo. Aplicaciones Web Frontend
 math: mathjax
 ---
 
@@ -17,11 +17,11 @@ math: mathjax
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | División Académica                  | Ingenierías                                                                                                                                                       |
 | Departamento                        | Ingeniería de Sistemas                                                                                                                                            |
-| Nombre de la asignatura             | DLLO. APLICACIONES WEB BACKEND                                                                                                                                    |
+| Nombre de la asignatura             | DLLO. APLICACIONES WEB FRONTEND                                                                                                                                   |
 | Código de la asignatura             | IST 4452                                                                                                                                                          |
 | NRC                                 | 3515                                                                                                                                                              |
 | Nivel de la asignatura              | Pregrado                                                                                                                                                          |
-| Requisitos                          | - IST 2088 ALGORITMIA Y PROGRAMACIÓN I<br/>- IST 2089 ALGORITMIA Y PROGRAMACIÓN II<br/>- IST 2110 PROGRAMACIÓN ORIENTADA A OBJETOS<br/> - IST 7111 BASES DE DATOS |
+| Requisitos                          | - IST 2088 ALGORITMIA Y PROGRAMACIÓN I<br/>- IST 2089 ALGORITMIA Y PROGRAMACIÓN II<br/>- IST 2110 PROGRAMACIÓN ORIENTADA A OBJETOS |
 | Número de créditos de la asignatura | 3                                                                                                                                                                 |
 | No. de horas teóricas del curso     | 1-2 horas                                                                                                                                                         |
 | No. de horas prácticas por semana   | 1-2 horas                                                                                                                                                         |
@@ -34,7 +34,7 @@ math: mathjax
 
 2. **DESCRIPCIÓN DE LA ASIGNATURA**
 
-En este curso se estudian conceptos y tecnologías web usadas en el desarrollo de aplicaciones del lado del servidor (backend). El lado no visible de las aplicaciones web se encarga de persistir la información a través de conexiones con bases de datos, realizar tareas asíncronas, enviar notificaciones, comunicarse con servicios externos, entre otros. El cliente que consume el backend espera el menor tiempo de respuesta posible, una tasa de error baja y que siempre esté disponible. Por esta razón, las soluciones desarrolladas en este entorno deben ser óptimas, escalables y confiables. Para lograr estos objetivos se cuentan con múltiples herramientas, metodologías de desarrollo y buenas prácticas. A diferencia de las aplicaciones de escritorio, los recursos físicos no se encuentran del lado del cliente, es por esto que el despliegue de aplicaciones web se realiza en la nube (en la mayoría de los casos).
+En este curso se estudian conceptos y tecnologías web usadas en el desarrollo de aplicaciones del lado del cliente (frontend). El lado visible de las aplicaciones web se encarga de presentar la información al usuario, reaccionar a sus interacciones, consumir APIs, gestionar el estado de la aplicación, entre otros. El usuario espera interfaces rápidas, responsivas, accesibles y una experiencia de usuario fluida. Por esta razón, las soluciones desarrolladas en este entorno deben ser óptimas, eficientes y centradas en el usuario. Para lograr estos objetivos se cuentan con múltiples frameworks, librerías, metodologías de desarrollo y buenas prácticas. Las aplicaciones frontend modernas pueden ser desplegadas en servicios de hosting estático, CDNs, o junto con el backend en la nube.
 
 3. **JUSTIFICACIÓN**
 
@@ -44,18 +44,19 @@ El desarrollo de aplicaciones web es un campo altamente demandado dentro de los 
 
 4. **OBJETIVO GENERAL DEL CURSO**
 
-Este curso tiene como objetivo brindarle al estudiante herramientas que le permitan tener la capacidad de diseñar e implementar soluciones para aplicaciones web backend.
+Este curso tiene como objetivo brindarle al estudiante herramientas que le permitan tener la capacidad de diseñar e implementar interfaces de usuario para aplicaciones web frontend.
 
 5. **RESULTADO DE APRENDIZAJE**
 
-Al finalizar la asignatura los estudiantes estarán en la capacidad de desarrollar una REST API
-escrita en Javascript que:
+Al finalizar la asignatura los estudiantes estarán en la capacidad de desarrollar una aplicación web
+frontend escrita en Javascript que:
 
-- Persiste información usando una base de datos no relacional.
-- Permite a los usuarios autenticarse.
-- Puede ser desplegada utilizando Docker.
+- Presenta una interfaz de usuario moderna y responsiva.
+- Gestiona el estado de la aplicación eficientemente.
+- Consume APIs REST desde el backend.
 - Está escrita en TypeScript.
-- Posee pruebas unitarias, y de integración.
+- Utiliza React como framework.
+- Posee pruebas unitarias y de componentes.
 
 6. **METODOLOGÍA**
 
@@ -67,14 +68,14 @@ La asignatura se desarrollará con la explicación teórica por parte del profes
 | --- | -------------------------- | --------------- | ------ |
 | 0   | Introducción               | 3               | 1      |
 | 1   | Javascript                 | 12              | 2 - 5  |
-| 2   | Git + NodeJS + NPM         | 6               | 6 - 7  |
-| 3   | HTTP + REST + Arquitectura | 3               | 8      |
-| 4   | MongoDB + Mongoose         | 3               | 9 - 10 |
-| 5   | Pruebas                    | 3               | 11     |
-| 6   | Encriptación               | 3               | 12     |
-| 7   | Docker                     | 3               | 13     |
-| 8   | Typescript                 | 3               | 14     |
-| 9   | Lint + Pipelines           | 3               | 15-16  |
+| 2   | Git + HTML + CSS           | 6               | 6 - 7  |
+| 3   | React + Componentes        | 6               | 8 - 9  |
+| 4   | Estado y Hooks             | 3               | 10     |
+| 5   | Routing y Navegación       | 3               | 11     |
+| 6   | Consumo de APIs            | 3               | 12     |
+| 7   | Typescript                 | 3               | 13     |
+| 8   | Pruebas                    | 3               | 14     |
+| 9   | Deployment y Optimización  | 3               | 15-16  |
 
 8. **EVALUACIÓN**
 
@@ -83,10 +84,10 @@ Las 3 primeras evaluaciones serán realizadas en el salón de clase de manera vi
 | Evaluación       | %   | Fecha                           | Descripción                                 |
 | ---------------- | --- | ------------------------------- | ------------------------------------------- |
 | Evaluación 1     | 20  | 15 Agosto 2025                  | Evaluación de Javascript Basico             |
-| Evaluación 2     | 20  | 12 Septiembre 2025               | Evaluación de Javascript Avanzado           |
-| Evaluación 3     | 10  | 3 Octubre 2025                  | Evaluación Teórica Git, Node, NPM           |
-| Evaluación 4     | 20  | 24 Octubre - 14 Noviembre 2025  | Construcción de REST API  |
-| Evaluación final | 20  | 14 Noviembre - 5 Diciembre 2025 | Construcción de REST API con arquitectura de microservicios  |
+| Evaluación 2     | 20  | 12 Septiembre 2025               | Evaluación de React y Componentes           |
+| Evaluación 3     | 10  | 3 Octubre 2025                  | Evaluación Teórica Git, HTML, CSS           |
+| Evaluación 4     | 20  | 24 Octubre - 14 Noviembre 2025  | Construcción de Aplicación Frontend Individual  |
+| Evaluación final | 20  | 14 Noviembre - 5 Diciembre 2025 | Construcción de Aplicación Frontend Grupal  |
 | Talleres         | 10  | N/A                             | Talleres realizados a lo largo del semestre |
 
 ---
