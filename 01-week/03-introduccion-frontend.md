@@ -8,7 +8,7 @@ exportFilename: 03-introduccion-frontend
 
 # Introduccion al <br>desarrollo front-end
 
-✏️ 2025-03 ➖ ⏱️ 15 min.
+✏️ 2026-01 ➖ ⏱️ 15 min.
 
 ---
 layout: cover

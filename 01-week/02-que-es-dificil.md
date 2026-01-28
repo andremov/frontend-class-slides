@@ -8,7 +8,7 @@ exportFilename: 02-que-es-dificil
 
 # Que es difícil?
 
-✏️ 2025-03 ➖ ⏱️ 8 min.
+✏️ 2026-01 ➖ ⏱️ 8 min.
 
 ---
 layout: default-y-center

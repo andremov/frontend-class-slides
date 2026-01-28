@@ -8,7 +8,7 @@ exportFilename: 01-introduccion-curso
 
 # Introducción al curso
 
-✏️ 2025-03 ➖ ⏱️ 3 min.
+✏️ 2026-01 ➖ ⏱️ 3 min.
 
 ---
 layout: default-y-center
@@ -24,7 +24,7 @@ Junior Full Stack Web Developer (2021). \
 Profesor de Backend (2022). \
 Senior Full Stack Web Developer / Tech Lead (2023) \
 Plata en Valorant :cry: (2024) \
-Tesis Terminada (2025) 
+Tesis Terminada (2025) \
 Profesor de Frontend & Maestría (?) (2026) 
 
 ::header::
