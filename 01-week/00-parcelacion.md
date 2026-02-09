@@ -64,33 +64,36 @@ La asignatura se desarrollará con la explicación teórica por parte del profes
 
 7. **CONTENIDO**
 
-| #   | Tópico                     | Número de horas | Semana |
-| --- | -------------------------- | --------------- | ------ |
-| 0   | Introducción               | 3               | 1      |
-| 1   | Javascript                 | 12              | 2 - 5  |
-| 2   | Git + HTML + CSS           | 6               | 6 - 7  |
-| 3   | React + Componentes        | 6               | 8 - 9  |
-| 4   | Estado y Hooks             | 3               | 10     |
-| 5   | Routing y Navegación       | 3               | 11     |
-| 6   | Consumo de APIs            | 3               | 12     |
-| 7   | Typescript                 | 3               | 13     |
-| 8   | Pruebas                    | 3               | 14     |
-| 9   | Deployment y Optimización  | 3               | 15-16  |
+| #   | Tópico                     | Número de horas | Semana   |
+| --- | -------------------------- | --------------- | -------- |
+| 0   | Introducción               | 3               | 1        |
+| 1   | HTML + CSS                 | 6               | 1 - 2    |
+| 2   | Javascript                 | 9               | 2 - 4    |
+| 3   | Git                        | 3               | 5        |
+| 4   | React + Componentes        | 6               | 6 - 7    |
+| 5   | Estado y Hooks             | 3               | 8        |
+| 6   | Routing y Navegación       | 3               | 9        |
+| 7   | Consumo de APIs            | 3               | 10       |
+| 8   | Typescript                 | 3               | 11       |
+| 9   | Pruebas                    | 3               | 12       |
+| 10  | Deployment y Optimización  | 6               | 13 - 14  |
+| 11  | Proyecto Final             | 6               | 15 - 16  |
+
+---
 
 8. **EVALUACIÓN**
 
 Las 3 primeras evaluaciones serán realizadas en el salón de clase de manera virtual a través de la plataforma, mientras que las ultimas 2 evaluaciones serán entregables con un mes de plazo para realizarse y entregarse.
 
-| Evaluación       | %   | Fecha                           | Descripción                                 |
-| ---------------- | --- | ------------------------------- | ------------------------------------------- |
-| Evaluación 1     | 20  | 15 Agosto 2025                  | Evaluación de Javascript Basico             |
-| Evaluación 2     | 20  | 12 Septiembre 2025               | Evaluación de React y Componentes           |
-| Evaluación 3     | 10  | 3 Octubre 2025                  | Evaluación Teórica Git, HTML, CSS           |
-| Evaluación 4     | 20  | 24 Octubre - 14 Noviembre 2025  | Construcción de Aplicación Frontend Individual  |
-| Evaluación final | 20  | 14 Noviembre - 5 Diciembre 2025 | Construcción de Aplicación Frontend Grupal  |
-| Talleres         | 10  | N/A                             | Talleres realizados a lo largo del semestre |
+| Evaluación       | %   | Fecha                        | Descripción                                    |
+| ---------------- | --- | ---------------------------- | ---------------------------------------------- |
+| Evaluación 1     | 20  | 28 Febrero 2026              | Evaluación de Javascript Básico                |
+| Evaluación 2     | 20  | 28 Marzo 2026                | Evaluación de React y Componentes              |
+| Evaluación 3     | 10  | 18 Abril 2026                | Evaluación Teórica Git, HTML, CSS              |
+| Evaluación 4     | 20  | 2 Mayo - 23 Mayo 2026        | Construcción de Aplicación Frontend Individual |
+| Evaluación final | 20  | 23 Mayo - 6 Junio 2026       | Construcción de Aplicación Frontend Grupal     |
+| Talleres         | 10  | N/A                          | Talleres realizados a lo largo del semestre    |
 
----
 
 9. **REFERENCIAS**
 
