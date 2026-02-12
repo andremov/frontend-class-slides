@@ -1,0 +1,639 @@
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 1,
+QuestionText,¿Qué es Front-end?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,El servidor que maneja los datos de la aplicación
+Option,100,Aquello que el usuario ve y manipula
+Option,0,La base de datos de la aplicación
+Option,0,El código que se ejecuta en el servidor
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 2,
+QuestionText,¿Qué es Back-end?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,La interfaz de usuario de la aplicación
+Option,0,El diseño visual de la página web
+Option,100,Aquello que NO está bajo control del usuario y maneja la lógica de negocio
+Option,0,El navegador web del usuario
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 3,
+QuestionText,¿Cuál es la diferencia principal entre una librería y un framework?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,"No hay diferencia, son lo mismo"
+Option,0,"Una librería incluye todo lo necesario, un framework solo herramientas específicas"
+Option,100,"Una librería solo proporciona herramientas específicas, un framework incluye todo"
+Option,0,Una librería es más grande que un framework
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 4,
+QuestionText,¿React es una librería o un framework?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,"Framework, porque incluye routing y estado global"
+Option,100,"Librería, porque solo maneja la UI"
+Option,0,"Framework, porque es muy completo"
+Option,0,"Librería, porque es pequeño"
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 5,
+QuestionText,¿Qué significa HTML?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,Hyper Text Markup Language
+Option,0,High Tech Modern Language
+Option,0,Home Tool Markup Language
+Option,0,Hyperlink and Text Markup Language
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 6,
+QuestionText,¿HTML es un lenguaje de programación?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,"Sí, porque ejecuta código"
+Option,100,"No, es un lenguaje de marcado"
+Option,0,"Sí, porque tiene lógica"
+Option,0,Depende de la versión
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 7,
+QuestionText,¿Cuál es la estructura básica correcta de un documento HTML?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,<html><body><head></head></body></html>
+Option,100,<!DOCTYPE html><html><head></head><body></body></html>
+Option,0,<html><head><body></body></head></html>
+Option,0,<!DOCTYPE><head><body></body></head>
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 8,
+QuestionText,¿Qué elemento HTML se usa para el contenido principal de la página?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,<div>
+Option,0,<content>
+Option,100,<main>
+Option,0,<body>
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 9,
+QuestionText,¿Cuántos elementos <h1> debe tener una página HTML?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Tantos como sea necesario
+Option,0,"Ninguno, no es obligatorio"
+Option,100,Solo uno por página
+Option,0,Mínimo tres
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 10,
+QuestionText,¿Qué atributo es obligatorio en las imágenes para accesibilidad?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,src
+Option,0,title
+Option,100,alt
+Option,0,width
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 11,
+QuestionText,¿Cuál es la diferencia entre <div> y <span>?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,No hay diferencia
+Option,0,"<div> es para texto, <span> para contenedores"
+Option,100,"<div> es de bloque, <span> es en línea"
+Option,0,<div> es más moderno que <span>
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 12,
+QuestionText,¿Qué elemento HTML NO es semántico?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,<header>
+Option,0,<nav>
+Option,100,<div>
+Option,0,<article>
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 13,
+QuestionText,¿Para qué sirve el elemento <label> en formularios?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Para crear etiquetas visuales
+Option,100,Para asociar texto descriptivo con inputs y mejorar accesibilidad
+Option,0,Para agrupar inputs
+Option,0,Para validar formularios
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 14,
+QuestionText,¿Qué atributo hace que un campo de formulario sea obligatorio?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,mandatory
+Option,0,obligatory
+Option,100,required
+Option,0,necessary
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 15,
+QuestionText,¿Qué significa CSS?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Computer Style Sheets
+Option,100,Cascading Style Sheets
+Option,0,Creative Style System
+Option,0,Cascading System Styles
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 16,
+QuestionText,¿Cuál es el propósito principal de CSS?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Crear la estructura de la página
+Option,0,Agregar interactividad
+Option,100,Definir el estilo visual de las páginas web
+Option,0,Manejar bases de datos
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 17,
+QuestionText,¿Cuál es la sintaxis correcta de CSS?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,selector { propiedad: valor; }
+Option,0,selector [propiedad = valor]
+Option,0,propiedad { selector: valor; }
+Option,0,{ selector propiedad valor }
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 18,
+QuestionText,¿Cuál selector tiene mayor especificidad?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,.clase
+Option,0,elemento
+Option,100,#id
+Option,0,*
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 19,
+QuestionText,"En la cascada CSS, ¿qué tiene mayor prioridad?",
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,El primer estilo en el código
+Option,100,La especificidad
+Option,0,El último estilo en el código
+Option,0,El navegador decide
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 20,
+QuestionText,¿Qué NO es parte del Box Model?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Content
+Option,0,Padding
+Option,0,Margin
+Option,100,Color
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 21,
+QuestionText,¿Cuál es el valor recomendado de box-sizing?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,content-box
+Option,100,border-box
+Option,0,padding-box
+Option,0,margin-box
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 22,
+QuestionText,¿Qué hace display: none?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Hace el elemento transparente
+Option,100,Oculta el elemento completamente
+Option,0,Hace el elemento pequeño
+Option,0,Quita solo el color del elemento
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 23,
+QuestionText,¿Qué hace position: fixed?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Fija el elemento en su posición original
+Option,0,Posiciona el elemento relativo al ancestro
+Option,100,Posiciona el elemento relativo al viewport
+Option,0,No hace nada
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 24,
+QuestionText,¿Flexbox es un modelo de layout...?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Bidimensional (filas y columnas)
+Option,0,Tridimensional
+Option,100,Unidimensional (fila o columna)
+Option,0,Sin dimensiones
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 25,
+QuestionText,¿Qué propiedad de flexbox se usa para centrar items en el eje principal?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,align-items
+Option,100,justify-content
+Option,0,text-align
+Option,0,center-items
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 26,
+QuestionText,¿CSS Grid es un modelo de layout...?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Unidimensional (fila o columna)
+Option,0,Solo para texto
+Option,100,Bidimensional (filas y columnas)
+Option,0,Solo para imágenes
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 27,
+QuestionText,¿Para qué se usan las media queries?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Para consultar bases de datos
+Option,100,Para aplicar estilos según características del dispositivo
+Option,0,Para cargar imágenes
+Option,0,Para crear animaciones
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 28,
+QuestionText,¿Qué es el enfoque "Mobile First"?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Diseñar solo para móviles
+Option,100,Diseñar primero para móvil y luego escalar hacia arriba
+Option,0,Diseñar primero para desktop y luego para móvil
+Option,0,Diseñar igual para todos los dispositivos
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 29,
+QuestionText,¿Qué significa vw en CSS?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Very wide
+Option,100,Viewport width (ancho del viewport)
+Option,0,Variable width
+Option,0,Visible width
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 30,
+QuestionText,¿Qué es BEM?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Un framework de CSS
+Option,100,Una metodología de nombrado de clases CSS
+Option,0,Un preprocesador de CSS
+Option,0,Un lenguaje de programación
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 31,
+QuestionText,"En BEM, ¿qué significa el ""Block""?",
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Un elemento bloqueado
+Option,100,Un componente independiente
+Option,0,Un modificador de estilo
+Option,0,Una clase prohibida
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 32,
+QuestionText,"En BEM, ¿cómo se separan los elementos del bloque?",
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Con un guion: block-element
+Option,100,Con doble guion bajo: block__element
+Option,0,Con punto: block.element
+Option,0,Con slash: block/element
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 33,
+QuestionText,"En BEM, ¿cómo se separan los modificadores?",
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,Con doble guion: block--modifier
+Option,0,Con guion bajo: block_modifier
+Option,0,Con punto: block.modifier
+Option,0,Con dos puntos: block:modifier
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 34,
+QuestionText,¿Cómo se definen variables CSS?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,var-name: value;
+Option,0,$name: value;
+Option,100,--name: value;
+Option,0,@name: value;
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 35,
+QuestionText,¿Cómo se usan las variables CSS?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,value(--name)
+Option,100,var(--name)
+Option,0,use(--name)
+Option,0,get(--name)
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 36,
+QuestionText,¿Qué unidad CSS es relativa al tamaño de fuente del root?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,em
+Option,0,px
+Option,100,rem
+Option,0,%
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 37,
+QuestionText,¿Cuál es el breakpoint común para tablets?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,320px
+Option,100,768px
+Option,0,1024px
+Option,0,1440px
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 38,
+QuestionText,¿Qué propiedad grid se usa para definir el espacio entre items?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,space
+Option,0,margin
+Option,100,gap
+Option,0,padding
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 39,
+QuestionText,¿Cuándo deberías usar Flexbox en lugar de Grid?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Para layouts complejos bidimensionales
+Option,100,Para alinear elementos en una dirección
+Option,0,Para crear galerías de imágenes
+Option,0,Siempre se debe usar Grid
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Examen Medio Término > Pregunta 40,
+QuestionText,¿Qué meta tag es esencial para diseño responsivo?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,<meta name="responsive">
+Option,100,"<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">"
+Option,0,<meta name="mobile">
+Option,0,<meta name="device">
+Hint,,
+Feedback,,
