@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Examen de Medio Término
-exportFilename: midterm-exam
+exportFilename: 12-midterm-exam
 ---
 
 # Examen de Medio Término

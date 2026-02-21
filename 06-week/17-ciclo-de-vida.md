@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Ciclo de Vida de un Componente
-exportFilename: 16-ciclo-de-vida
+exportFilename: 17-ciclo-de-vida
 ---
 
 # Ciclo de Vida
@@ -39,7 +39,7 @@ Todo componente de React pasa por **tres fases** durante su existencia:
 - **Unmounting** — el componente se elimina del DOM
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -81,7 +81,7 @@ class MiComponente extends React.Component {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -116,7 +116,7 @@ class MiComponente extends React.Component {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -151,7 +151,7 @@ class MiComponente extends React.Component {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -188,7 +188,7 @@ class Reloj extends React.Component {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -227,7 +227,7 @@ class Perfil extends React.Component {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -262,7 +262,7 @@ class Reloj extends React.Component {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -279,7 +279,7 @@ layout: default-y-center
 Si no cancelas el timer cuando el componente se desmonta, el timer sigue corriendo en memoria e intenta actualizar el estado de un componente que ya no existe → **memory leak** y errores en consola.
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -315,7 +315,7 @@ useEffect(() => {
 El **array de dependencias** es el que determina a cuál método equivale:
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -337,7 +337,7 @@ El **array de dependencias** es el que determina a cuál método equivale:
 | Con cleanup `return () => {}` | `componentWillUnmount` |
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -385,7 +385,7 @@ function Ejemplo() {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -436,7 +436,7 @@ function Perfil({ id }) {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -489,7 +489,7 @@ function Reloj() {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -528,7 +528,7 @@ function Perfil({ id }) {
 Un solo `useEffect` reemplaza los tres métodos del class component.
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -553,7 +553,7 @@ layout: default-y-center
 > Los **class components** siguen funcionando, pero los **function components con hooks** son el estándar moderno. La ventaja de los class components es que el ciclo de vida queda explícito y es más fácil de aprender conceptualmente.
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}

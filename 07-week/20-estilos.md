@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Estilos en React
-exportFilename: 19-estilos
+exportFilename: 20-estilos
 ---
 
 # Estilos en React
@@ -32,7 +32,7 @@ Hay varias formas de darle estilo a los componentes. Cada una tiene sus ventajas
 6. **Tailwind CSS** — clases de utilidad directamente en el HTML
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -66,7 +66,7 @@ function App() {
 ```
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -103,7 +103,7 @@ function Button2() {
 **Útil para:** valores dinámicos basados en props o estado.
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -145,7 +145,7 @@ import styles from './Button.scss';
 ```
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -174,7 +174,7 @@ npm install styled-components
 ```
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -198,7 +198,7 @@ layout: two-cols-header
 - Curva de aprendizaje diferente
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -262,7 +262,7 @@ const Boton = styled.button`
 ```
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -301,7 +301,7 @@ Un framework **utility-first**: en lugar de escribir CSS personalizado, usas cla
 - Bordes: `rounded`, `rounded-lg`, `rounded-full`
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -354,7 +354,7 @@ import './Card.css';
 ```
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -377,7 +377,7 @@ layout: two-cols-header
 - El JSX puede volverse largo con muchas clases
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -417,7 +417,7 @@ Agregar la directiva en **`src/index.css`** (o el archivo CSS principal):
 ¡Listo! Las clases de Tailwind ya están disponibles en todos los componentes.
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -438,7 +438,7 @@ layout: default-y-center
 | **Tailwind CSS** | Por elemento | Plugin de Vite | **Mayoría de proyectos modernos** |
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -464,7 +464,7 @@ Para este curso y proyectos nuevos:
 > En la industria: Tailwind es el más adoptado en proyectos nuevos de React.
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}

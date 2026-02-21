@@ -1,9 +1,9 @@
 ---
-theme: ../theme
+theme: ../../theme
 transition: none
 layout: cover
 title: Taller 02 - React Fundamentos
-exportFilename: 14-taller-02
+exportFilename: 18-taller-02
 ---
 
 # Taller 02

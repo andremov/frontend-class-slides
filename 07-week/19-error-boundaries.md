@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Error Boundaries
-exportFilename: 18-error-boundaries
+exportFilename: 19-error-boundaries
 ---
 
 # Error Boundaries
@@ -40,7 +40,7 @@ App
 ```
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -64,7 +64,7 @@ layout: default-y-center
 - Server-side rendering
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -102,7 +102,7 @@ class ErrorBoundary extends React.Component {
 ```
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -162,7 +162,7 @@ class ErrorBoundary extends React.Component {
 ```
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -190,7 +190,7 @@ layout: default-y-center
 - Ofrecer una acción de recuperación: "Reintentar" o "Recargar"
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}

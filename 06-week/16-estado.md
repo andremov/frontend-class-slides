@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Estado Avanzado y Gestión del Estado
-exportFilename: 15-estado
+exportFilename: 16-estado
 ---
 
 # Estado Avanzado
@@ -37,7 +37,7 @@ App  ← 🏠 el estado vive aquí
 > Esto se llama **lifting state up** (elevar el estado).
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -72,7 +72,7 @@ function Vista({ texto }) {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -103,7 +103,7 @@ App  (tiene el usuario)
 - A medida que la app crece, esto se vuelve inmanejable.
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -142,7 +142,7 @@ function Avatar({ usuario }) {
 - Los componentes intermedios **no son reutilizables** fácilmente
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -175,7 +175,7 @@ Store global  [usuario = "Ana"]
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -219,7 +219,7 @@ function Avatar() {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -254,7 +254,7 @@ export default useStore;
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -306,7 +306,7 @@ function Display() {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -335,7 +335,7 @@ export const store = configureStore({
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -367,7 +367,7 @@ export default contadorSlice.reducer;
 
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -403,7 +403,7 @@ function Contador() {
 - **`useDispatch`** — enviar acciones para modificar el estado
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -446,7 +446,7 @@ const incrementar = useStore((s) => s.incrementar);
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -470,7 +470,7 @@ layout: default-y-center
 <br>
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}

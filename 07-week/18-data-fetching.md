@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Data Fetching y useEffect
-exportFilename: 17-data-fetching
+exportFilename: 18-data-fetching
 ---
 
 # Data Fetching
@@ -34,7 +34,7 @@ Un hook para **sincronizar un componente con algo externo** al flujo de React.
 - Leer o escribir en `localStorage`
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -59,7 +59,7 @@ useEffect(() => {
 | Sin array | Después de **cada** render ⚠️ |
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -84,7 +84,7 @@ useEffect(() => {
 ```
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -132,7 +132,7 @@ function Perfil({ id }) {
 ```
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -165,7 +165,7 @@ useEffect(() => {
 > Sin cleanup: el timer sigue corriendo → **memory leak**.
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -207,7 +207,7 @@ fetch('/api/posts', {
 ```
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -240,7 +240,7 @@ function ListaDePosts() {
 ```
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -269,7 +269,7 @@ useEffect(() => {
 > **Por qué?** useEffect espera una función de cleanup, no una Promise.
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -310,7 +310,7 @@ function ListaDePosts() {
 ```
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -345,7 +345,7 @@ layout: default-y-center
 ❌ No actualizar el estado de un componente desmontado
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -385,7 +385,7 @@ useEffect(() => {
 > Evita el error: *"Can't perform a React state update on an unmounted component"*.
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -428,7 +428,7 @@ export default useFetch;
 ```
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -465,7 +465,7 @@ function Posts() {
 > Los custom hooks reutilizan lógica sin duplicar código.
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -503,7 +503,7 @@ function Posts() {
 **Beneficios extra:** caché automático, revalidación en foco, paginación, mutaciones.
 
 ::header::
-Semana 5: React
+Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}

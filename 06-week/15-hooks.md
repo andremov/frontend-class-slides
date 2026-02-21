@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: React Hooks
-exportFilename: 14-hooks
+exportFilename: 15-hooks
 ---
 
 # React Hooks
@@ -36,7 +36,7 @@ function Contador() {
 Los hooks que empiezan con **`use`** son reconocidos por React como hooks.
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -66,7 +66,7 @@ function MiComponente() {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -90,7 +90,7 @@ const [x] = useState(0); // ❌ no funciona
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -132,7 +132,7 @@ function Contador() {
 - `useState(0)` — valor inicial (solo se usa en el primer render)
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -184,7 +184,7 @@ function Contador() {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -211,7 +211,7 @@ Es el **ciclo de vida** de los function components.
 | `return () => {}` | Limpieza al desmontar |
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -240,7 +240,7 @@ function Reloj() {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -282,7 +282,7 @@ function Formulario() {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -311,7 +311,7 @@ function Cronometro() {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -350,7 +350,7 @@ function Lista({ productos, filtro }) {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -386,7 +386,7 @@ function Padre() {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -432,7 +432,7 @@ const handleSubmit = useCallback((e) => {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -479,7 +479,7 @@ function Tarjeta() {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -515,7 +515,7 @@ function useContador(inicial = 0, paso = 1) {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -544,7 +544,7 @@ function MiContador() {
 ```
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -568,7 +568,7 @@ layout: default-y-center
 | `useXxx` | Custom | Extraer y reutilizar lógica con estado |
 
 ::header::
-Semana 5: React
+Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
