@@ -525,10 +525,10 @@ Los eventos en React funcionan igual que en HTML, pero en **camelCase**:
 
 ```jsx
 // ✅ Pasas la función como prop
-<button onClick={handleClick}>Clic</button>
+<button onClick={handleClick}>Click</button>
 
 // ❌ Llamas la función inmediatamente al renderizar
-<button onClick={handleClick()}>Clic</button>
+<button onClick={handleClick()}>Click</button>
 ```
 
 ::header::

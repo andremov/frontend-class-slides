@@ -647,7 +647,7 @@ layout: default-y-center
 </label>
 ```
 
-Esto mejora la accesibilidad y UX (se puede hacer clic en el label).
+Esto mejora la accesibilidad y UX (se puede hacer click en el label).
 
 ::header::
 Semana 2: HTML
