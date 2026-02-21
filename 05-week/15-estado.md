@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Estado Avanzado y Gestión del Estado
-exportFilename: 14-estado
+exportFilename: 15-estado
 ---
 
 # Estado Avanzado
@@ -312,6 +312,103 @@ Semana 5: React
 {{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
+
+## Redux y Redux Toolkit
+
+::contents::
+**Redux** es el estándar histórico para estado global. **Redux Toolkit (RTK)** es la forma moderna — mismo modelo (store → action → reducer), mucho menos boilerplate.
+
+```bash
+npm install @reduxjs/toolkit react-redux
+```
+
+```jsx
+// store.js
+import { configureStore } from '@reduxjs/toolkit';
+import contadorReducer from './contadorSlice';
+
+export const store = configureStore({
+  reducer: { contador: contadorReducer },
+});
+```
+
+::header::
+Semana 5: React
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+## Redux y Redux Toolkit
+
+::contents::
+```jsx
+// contadorSlice.js
+import { createSlice } from '@reduxjs/toolkit';
+
+const contadorSlice = createSlice({
+  name: 'contador',
+  initialState: { valor: 0 },
+  reducers: {
+    incrementar: (state) => { state.valor += 1; },
+    decrementar: (state) => { state.valor -= 1; },
+  },
+});
+
+export const { incrementar, decrementar } =
+  contadorSlice.actions;
+export default contadorSlice.reducer;
+```
+
+
+::header::
+Semana 5: React
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+## Redux y Redux Toolkit
+
+::contents::
+```jsx
+// Componente
+import { useSelector, useDispatch } from 'react-redux';
+import { incrementar, decrementar } from './contadorSlice';
+
+function Contador() {
+  const valor = useSelector((s) => s.contador.valor);
+  const dispatch = useDispatch();
+
+  return (
+    <>
+      <p>{valor}</p>
+      <button onClick={() => dispatch(decrementar())}>-</button>
+      <button onClick={() => dispatch(incrementar())}>+</button>
+    </>
+  );
+}
+```
+
+- **`createSlice`** — define estado, acciones y reducer juntos
+- **`useSelector`** — leer del store (como `useStore` en Zustand)
+- **`useDispatch`** — enviar acciones para modificar el estado
+
+::header::
+Semana 5: React
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
 layout: two-cols-centered
 ---
 
@@ -368,6 +465,7 @@ layout: default-y-center
 | Árbol pequeño / dato que cambia poco | Context API |
 | Estado global complejo / muchos consumidores | **Zustand** |
 | App grande con múltiples stores | **Zustand** |
+| Equipo grande / empresa / código ya usa Redux | **Redux Toolkit** |
 
 <br>
 
