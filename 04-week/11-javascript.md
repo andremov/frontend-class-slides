@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: JavaScript - Sintaxis y Fundamentos
-exportFilename: 07-javascript
+exportFilename: 11-javascript
 ---
 
 # JavaScript
@@ -38,7 +38,7 @@ PI = 3.14; // ❌ Error: no se puede reasignar
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -64,7 +64,7 @@ let estaActivo = true;
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -89,7 +89,7 @@ let negativo = -10;
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -115,7 +115,7 @@ let vacio = null;
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -139,7 +139,7 @@ console.log(typeof function(){}); // "function"
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -175,7 +175,7 @@ x--;  // x = 5
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -202,7 +202,7 @@ console.log(10 <= 5);    // false
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -219,7 +219,7 @@ console.log(5 == "5"); // ?
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -238,7 +238,7 @@ console.log(5 !== "5"); // false
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -269,7 +269,7 @@ console.log(10 <= 5);    // false
 **Mejor práctica**: Usar siempre `===` y `!==` (comparación de tipo y de valor).
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -296,7 +296,7 @@ console.log(!false);         // true
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -327,7 +327,7 @@ if (esFinDeSemana || tieneEnergia) {
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -367,7 +367,7 @@ if (nota >= 90) {
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -394,7 +394,7 @@ let resultado = nota >= 90 ? "A" :
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -428,7 +428,7 @@ switch (dia) {
 ⚠️ No olvidar `break` o `return` en los casos.
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -464,7 +464,7 @@ for (let i = 0; i < 10; i += 2) {
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -493,7 +493,7 @@ do {
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -525,7 +525,7 @@ for (let i = 0; i < 10; i++) {
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -568,7 +568,7 @@ function mostrarMensaje() {
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -605,7 +605,7 @@ console.log(sumarTodos(1, 2, 3, 4)); // 10
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -643,7 +643,7 @@ console.log(obtenerPI());     // 3.14159
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -683,7 +683,7 @@ console.log(frutas[frutas.length - 1]); // "naranja"
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -716,7 +716,7 @@ frutas.shift();
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -747,7 +747,7 @@ let texto = frutas.join(", ");
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -782,7 +782,7 @@ numeros.forEach(numero => console.log(numero));
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -817,7 +817,7 @@ let sumaPares = numeros
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -850,7 +850,7 @@ let todosPares = numeros.every(n => n % 2 === 0);
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -881,7 +881,7 @@ const flatAll = deepNested.flat(Infinity);
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -926,7 +926,7 @@ delete persona.activo;
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -961,7 +961,7 @@ console.log(persona.despedir());  // "Adiós, soy María"
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -990,7 +990,7 @@ for (let clave in persona) {
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1021,7 +1021,7 @@ let entries = Object.entries(persona);
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1058,7 +1058,7 @@ console.log(tercera); // "naranja"
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1094,7 +1094,7 @@ console.log(texto.endsWith("Mundo"));  // true
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1127,7 +1127,7 @@ console.log(conEspacios.trim()); // "hola"
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1164,7 +1164,7 @@ console.log(mensaje2);
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1196,7 +1196,7 @@ NaN // Not a Number
 Todo lo demás
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1224,7 +1224,7 @@ console.log(valor4); // "" (no es null ni undefined)
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1254,7 +1254,7 @@ console.log(texto2); // "" ("" no es null/undefined)
 **Usa `??` cuando solo quieres valores por defecto para `null` y `undefined`.**
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1294,7 +1294,7 @@ console.log(telefono); // "Sin teléfono"
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1341,7 +1341,7 @@ function dividir(a, b) {
 ```
 
 ::header::
-Semana 2: JavaScript
+Semana 5: JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}

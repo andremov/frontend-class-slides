@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Repaso para Parcial
-exportFilename: midterm-review
+exportFilename: 09-repaso-parcial
 ---
 
 # Repaso para el Parcial
@@ -36,7 +36,7 @@ layout: default-y-center
 El front-end interactúa con el back-end para obtener y enviar datos.
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -57,7 +57,7 @@ Tecnologías fundamentales:
 ⚡ **JavaScript** → Interactividad
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -83,7 +83,7 @@ layout: two-cols-centered
 - Ejemplos: Angular, Next.js, Nuxt, SvelteKit
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -107,7 +107,7 @@ layout: default-y-center
 - Versión actual: **HTML5** (2014)
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -134,7 +134,7 @@ layout: default-y-center
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -163,7 +163,7 @@ Un elemento HTML consta de:
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -189,7 +189,7 @@ Atributos importantes:
 - **`data-*`**: Atributos personalizados
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -214,7 +214,7 @@ layout: default-y-center
 **Contenedores**: `<div>` (bloque), `<span>` (en línea)
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -241,7 +241,7 @@ HTML semántico usa etiquetas que **describen su significado**.
 **Beneficios**: Mejor accesibilidad, SEO, legibilidad y mantenimiento.
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -272,7 +272,7 @@ layout: default-y-center
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -301,7 +301,7 @@ layout: default-y-center
 **Siempre usar `<label>`** para accesibilidad.
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -328,7 +328,7 @@ layout: default-y-center
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -354,7 +354,7 @@ layout: default-y-center
 - **`minlength/maxlength`**: Longitud
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -381,7 +381,7 @@ layout: default-y-center
 ✅ **Cerrar todas las etiquetas** en el orden correcto
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -412,7 +412,7 @@ layout: default-y-center
 - ✅ Diseño responsivo
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -441,7 +441,7 @@ p {
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -472,7 +472,7 @@ input:focus { border-color: blue; }
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -499,7 +499,7 @@ p { color: blue; }              /* 0,0,1 */
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -529,7 +529,7 @@ text-align: center;
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -566,7 +566,7 @@ div {
 **Ancho total** = width + padding + border + margin
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -597,7 +597,7 @@ div {
 **Mejor práctica**: `* { box-sizing: border-box; }`
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -627,7 +627,7 @@ padding-right: 20px;
 Lo mismo aplica para `margin`.
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -658,7 +658,7 @@ top: 0;
 **Z-Index**: Controla el orden de apilamiento (valores más altos = más cerca).
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -690,7 +690,7 @@ Perfecto para alinear elementos y distribuir espacio.
 - Los hijos directos → **flex items**
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -721,7 +721,7 @@ layout: default-y-center
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -750,7 +750,7 @@ layout: default-y-center
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -785,7 +785,7 @@ layout: default-y-center
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -817,7 +817,7 @@ Perfecto para layouts complejos y estructuras de página.
 - Los hijos directos → **grid items**
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -850,7 +850,7 @@ layout: default-y-center
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -879,7 +879,7 @@ layout: default-y-center
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -910,7 +910,7 @@ layout: default-y-center
 Forma visual e intuitiva de definir layouts.
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -947,7 +947,7 @@ Aplican estilos basados en características del dispositivo:
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -980,7 +980,7 @@ layout: default-y-center
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1012,7 +1012,7 @@ width: clamp(300px, 50%, 800px);
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1040,7 +1040,7 @@ img {
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1080,7 +1080,7 @@ layout: default-y-center
 **Ventaja**: Cambiar valores en un solo lugar.
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1113,7 +1113,7 @@ layout: default-y-center
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1142,7 +1142,7 @@ layout: default-y-center
 **Ventajas**: Nombres descriptivos, evita conflictos, código escalable.
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1181,7 +1181,7 @@ Animan cambios de propiedades CSS:
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1209,7 +1209,7 @@ transform: translate(50px) rotate(45deg) scale(1.2);
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1241,7 +1241,7 @@ layout: default-y-center
 ```
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1272,7 +1272,7 @@ layout: default-y-center
 ✅ **Validar** el HTML (W3C Validator)
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1299,7 +1299,7 @@ layout: default-y-center
 ✅ Mantener **especificidad baja**
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1328,7 +1328,7 @@ layout: default-y-center
 📌 **Modelo MVC**: Vista (Frontend), Modelo (Backend), Controlador
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1353,7 +1353,7 @@ layout: default-y-center
 📌 **Mejores prácticas**: accesibilidad, SEO, semántica
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1380,7 +1380,7 @@ layout: default-y-center
 📌 **Position**: static, relative, absolute, fixed, sticky
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1407,7 +1407,7 @@ layout: default-y-center
 📌 **Transiciones y transforms**
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1432,7 +1432,7 @@ layout: default-y-center
 **Ambos se pueden combinar**: Grid para el layout general, Flexbox dentro de grid items.
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1457,7 +1457,7 @@ layout: default-y-center
 💡 **Repasa especificidad** y la cascada de CSS
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -1483,7 +1483,7 @@ layout: default-y-center
 - Can I Use: https://caniuse.com
 
 ::header::
-Repaso Medio Término
+Repaso Parcial
 
 ::footer::
 {{ $page }} / {{ $nav.total }}

@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevStudio - Desarrollo y Diseño Web</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .section-title {
+        font-size: 36px;
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .section-title {
+        font-size: 36px;
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: #2c3e50;
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar-logo {
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .navbar-menu {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+      }
+
+      .navbar-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .navbar-menu a:hover {
+        background-color: #34495e;
+      }
+
+      .navbar-menu a.active {
+        background-color: #3498db;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        opacity: 0.9;
+      }
+
+      .hero-btn {
+        display: inline-block;
+        background-color: white;
+        color: #667eea;
+        padding: 15px 40px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      .hero-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      /* About Section */
+      #about {
+        background-color: white;
+      }
+
+      .about-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .about-content h2 {
+        color: #2c3e50;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      .about-content h3 {
+        color: #34495e;
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+
+      .about-content p {
+        color: #555;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .about-content ul {
+        background-color: #e8f4f8;
+        padding: 30px 50px;
+        border-radius: 10px;
+        list-style-position: inside;
+      }
+
+      .about-content li {
+        margin: 12px 0;
+        font-size: 18px;
+        color: #2c3e50;
+      }
+
+      /* Services Section */
+      #services {
+        background-color: #f5f5f5;
+      }
+
+      .services-grid {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .service-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 40px;
+        border-radius: 15px;
+        width: 300px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .service-card h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+
+      .service-card p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .service-card button {
+        background-color: white;
+        color: #667eea;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+        transition: transform 0.2s ease;
+      }
+
+      .service-card button:hover {
+        transform: scale(1.05);
+      }
+
+      /* Portfolio Section */
+      #portfolio {
+        background-color: white;
+      }
+
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .portfolio-item {
+        background-color: #3498db;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        transition: transform 0.3s ease;
+      }
+
+      .portfolio-item:hover {
+        transform: scale(1.05);
+      }
+
+      .portfolio-item:nth-child(even) {
+        background-color: #e74c3c;
+      }
+
+      .portfolio-item:nth-child(3n) {
+        background-color: #2ecc71;
+      }
+
+      /* Contact Section */
+      #contact {
+        background-color: #f5f5f5;
+      }
+
+      .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 50px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-group {
+        margin-bottom: 25px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 10px;
+        color: #34495e;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 15px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        transition: border-color 0.3s ease;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: #3498db;
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      .submit-btn {
+        width: 100%;
+        padding: 18px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      .submit-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+      }
+
+      /* Footer */
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      footer p {
+        margin: 5px 0;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .navbar .container {
+          justify-content: center;
+        }
+
+        .navbar-menu {
+          display: none;
+        }
+
+        .hero h1 {
+          font-size: 32px;
+        }
+
+        .hero p {
+          font-size: 16px;
+        }
+
+        .section-title {
+          font-size: 28px;
+        }
+
+        .portfolio-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .contact-form {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="navbar-logo">DevStudio</a>
+        <ul class="navbar-menu">
+          <li><a href="#inicio" class="active">Inicio</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+      <h1>Creamos Experiencias Web Increíbles</h1>
+      <p>Diseño y desarrollo web profesional para tu negocio</p>
+      <a href="#contact" class="hero-btn">Comienza Tu Proyecto</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="about-content">
+          <h2>Introducción al Desarrollo Frontend</h2>
+          <p>
+            El desarrollo frontend es la práctica de convertir datos en una
+            interfaz gráfica para que los usuarios puedan ver e interactuar con
+            esa información de forma visual.
+          </p>
+
+          <h3>Tecnologías Fundamentales</h3>
+          <ul>
+            <li>HTML - Estructura del contenido</li>
+            <li>CSS - Presentación y diseño</li>
+            <li>JavaScript - Interactividad y lógica</li>
+            <li>React - Biblioteca para interfaces de usuario</li>
+          </ul>
+
+          <p>
+            Estas tecnologías trabajan juntas para crear experiencias web
+            modernas y atractivas que los usuarios disfrutan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Diseño Web</h3>
+            <p>
+              Aprende a crear interfaces atractivas y funcionales usando HTML y
+              CSS modernos.
+            </p>
+            <button>Ver Más</button>
+          </div>
+          <div class="service-card">
+            <h3>JavaScript</h3>
+            <p>
+              Domina la programación del lado del cliente para crear
+              aplicaciones interactivas.
+            </p>
+            <button>Ver Más</button>
+          </div>
+          <div class="service-card">
+            <h3>React</h3>
+            <p>
+              Construye aplicaciones web escalables con componentes
+              reutilizables.
+            </p>
+            <button>Ver Más</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="section-title">Portafolio de Proyectos</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">Proyecto 1</div>
+          <div class="portfolio-item">Proyecto 2</div>
+          <div class="portfolio-item">Proyecto 3</div>
+          <div class="portfolio-item">Proyecto 4</div>
+          <div class="portfolio-item">Proyecto 5</div>
+          <div class="portfolio-item">Proyecto 6</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contáctanos</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="nombre">Nombre Completo</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingresa tu nombre"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="+57 300 123 4567"
+            />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              placeholder="Cuéntanos sobre tu proyecto..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 DevStudio. Todos los derechos reservados.</p>
+        <p>Diseño y Desarrollo Web Profesional</p>
+      </div>
+    </footer>
+  </body>
+</html>

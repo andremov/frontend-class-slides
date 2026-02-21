@@ -26,8 +26,6 @@ layout: default-y-center
 ::contents::
 **BEM** es una metodología de nombrado de clases CSS.
 
-**Creado por:** Yandex (empresa rusa de tecnología)
-
 **Objetivo:** Resolver problemas de:
 - Colisión de nombres de clases
 - Especificidad excesiva
@@ -557,26 +555,19 @@ layout: default-y-center
 ## Ventajas de Usar BEM
 
 ::contents::
-✅ **Nombres descriptivos y específicos**
-- Se entiende la estructura con solo leer las clases
+✅ **Nombres descriptivos y específicos** - Se entiende la estructura con solo leer las clases
 
-✅ **Evita conflictos de nombres**
-- Cada clase es única y específica
+✅ **Evita conflictos de nombres** - Cada clase es única y específica
 
-✅ **Especificidad baja y plana**
-- No hay anidación profunda de selectores
+✅ **Especificidad baja y plana** - No hay anidación profunda de selectores
 
-✅ **Reutilización fácil**
-- Los bloques son independientes y portables
+✅ **Reutilización fácil** - Los bloques son independientes
 
-✅ **Escalabilidad**
-- Funciona bien en proyectos grandes
+✅ **Escalabilidad** - Funciona bien en proyectos grandes
 
-✅ **Trabajo en equipo**
-- Convención clara que todos pueden seguir
+✅ **Trabajo en equipo** - Convención clara que todos pueden seguir
 
-✅ **Facilita encontrar y modificar estilos**
-- Estructura clara y predecible
+✅ **Facilita encontrar y modificar estilos** - Estructura clara y predecible
 
 ::header::
 Semana 2: BEM
@@ -713,14 +704,6 @@ layout: default-y-center
 - CSS Tricks: BEM 101
 - Smashing Magazine: BEM Guide
 
-**Herramientas:**
-- BEM Linter (VS Code extension)
-- PostCSS BEM Linter
-
-**Ejemplos:**
-- Yandex: Ejemplos de componentes BEM
-- GitHub: Proyectos ejemplo con BEM
-
 ::header::
 Semana 2: BEM
 
@@ -751,6 +734,20 @@ layout: default-y-center
 .card__button--primary { }
 ```
 
+::header::
+Semana 2: BEM
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+
+---
+layout: default-y-center
+---
+
+## Resumen - BEM en 60 Segundos
+
+::contents::
 **Reglas de oro:**
 1. Los elementos NO se anidan en nombres
 2. Los modificadores siempre van con la clase base

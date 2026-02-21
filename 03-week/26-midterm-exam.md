@@ -29,19 +29,6 @@ layout: question
 
 ## Pregunta 2
 
-¿Qué es Back-end?
-
-- La interfaz de usuario de la aplicación
-- El diseño visual de la página web
-- Aquello que NO está bajo control del usuario y maneja la lógica de negocio
-- El navegador web del usuario
-
----
-layout: question
----
-
-## Pregunta 3
-
 ¿Cuál es la diferencia principal entre una librería y un framework?
 
 - No hay diferencia, son lo mismo
@@ -53,7 +40,7 @@ layout: question
 layout: question
 ---
 
-## Pregunta 4
+## Pregunta 3
 
 ¿React es una librería o un framework?
 
@@ -66,112 +53,7 @@ layout: question
 layout: question
 ---
 
-## Pregunta 5
-
-¿Qué significa HTML?
-
-- Hyper Text Markup Language
-- High Tech Modern Language
-- Home Tool Markup Language
-- Hyperlink and Text Markup Language
-
----
-layout: question
----
-
-## Pregunta 6
-
-¿HTML es un lenguaje de programación?
-
-- Sí, porque ejecuta código
-- No, es un lenguaje de marcado
-- Sí, porque tiene lógica
-- Depende de la versión
-
----
-layout: question-content
----
-
-## Pregunta 7
-
-¿Cuál es la estructura básica correcta de un documento HTML?
-
-::content::
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Mi Página</title>
-  </head>
-  <body>
-    <h1>Contenido</h1>
-  </body>
-</html>
-```
-
-::options::
-- `<html><body><head></head></body></html>`
-- `<!DOCTYPE html><html><head></head><body></body></html>`
-- `<html><head><body></body></head></html>`
-- `<!DOCTYPE><head><body></body></head>`
-
----
-layout: question
----
-
-## Pregunta 8
-
-¿Qué elemento HTML se usa para el contenido principal de la página?
-
-- `<div>`
-- `<content>`
-- `<main>`
-- `<body>`
-
----
-layout: question
----
-
-## Pregunta 9
-
-¿Cuántos elementos `<h1>` debe tener una página HTML?
-
-- Tantos como sea necesario
-- Ninguno, no es obligatorio
-- Solo uno por página
-- Mínimo tres
-
----
-layout: question
----
-
-## Pregunta 10
-
-¿Qué atributo es obligatorio en las imágenes para accesibilidad?
-
-- src
-- title
-- alt
-- width
-
----
-layout: question
----
-
-## Pregunta 11
-
-¿Cuál es la diferencia entre `<div>` y `<span>`?
-
-- No hay diferencia
-- `<div>` es para texto, `<span>` para contenedores
-- `<div>` es de bloque, `<span>` es en línea
-- `<div>` es más moderno que `<span>`
-
----
-layout: question
----
-
-## Pregunta 12
+## Pregunta 4
 
 ¿Qué elemento HTML NO es semántico?
 
@@ -184,7 +66,20 @@ layout: question
 layout: question
 ---
 
-## Pregunta 13
+## Pregunta 5
+
+¿Por qué es importante usar HTML semántico?
+
+- Solo para hacer el código más bonito
+- Para mejorar la accesibilidad, SEO y mantenibilidad del código
+- Para que la página cargue más rápido
+- No es importante, es solo una preferencia de estilo
+
+---
+layout: question
+---
+
+## Pregunta 6
 
 ¿Para qué sirve el elemento `<label>` en formularios?
 
@@ -197,20 +92,7 @@ layout: question
 layout: question
 ---
 
-## Pregunta 14
-
-¿Qué atributo hace que un campo de formulario sea obligatorio?
-
-- mandatory
-- obligatory
-- required
-- necessary
-
----
-layout: question
----
-
-## Pregunta 15
+## Pregunta 7
 
 ¿Qué significa CSS?
 
@@ -223,7 +105,7 @@ layout: question
 layout: question
 ---
 
-## Pregunta 16
+## Pregunta 8
 
 ¿Cuál es el propósito principal de CSS?
 
@@ -233,22 +115,13 @@ layout: question
 - Manejar bases de datos
 
 ---
-layout: question-content
+layout: question
 ---
 
-## Pregunta 17
+## Pregunta 9
 
 ¿Cuál es la sintaxis correcta de CSS?
 
-::content::
-```css
-.mi-clase {
-  color: blue;
-  font-size: 16px;
-}
-```
-
-::options::
 - `selector { propiedad: valor; }`
 - `selector [propiedad = valor]`
 - `propiedad { selector: valor; }`
@@ -258,7 +131,7 @@ layout: question-content
 layout: question
 ---
 
-## Pregunta 18
+## Pregunta 10
 
 ¿Cuál selector tiene mayor especificidad?
 
@@ -271,7 +144,7 @@ layout: question
 layout: question
 ---
 
-## Pregunta 19
+## Pregunta 11
 
 En la cascada CSS, ¿qué tiene mayor prioridad?
 
@@ -284,7 +157,7 @@ En la cascada CSS, ¿qué tiene mayor prioridad?
 layout: question
 ---
 
-## Pregunta 20
+## Pregunta 12
 
 ¿Qué NO es parte del Box Model?
 
@@ -297,20 +170,29 @@ layout: question
 layout: question
 ---
 
-## Pregunta 21
+## Pregunta 13
 
-¿Cuál es el valor recomendado de box-sizing?
+Dado el siguiente HTML y CSS, ¿de qué color será el texto?
 
-- content-box
-- border-box
-- padding-box
-- margin-box
+HTML: `<div id="box" class="container">Texto</div>`
+
+CSS:
+```css
+div { color: blue; }
+.container { color: green; }
+#box { color: red; }
+```
+
+- blue
+- green
+- red
+- negro (valor por defecto)
 
 ---
 layout: question
 ---
 
-## Pregunta 22
+## Pregunta 14
 
 ¿Qué hace `display: none`?
 
@@ -323,59 +205,78 @@ layout: question
 layout: question
 ---
 
-## Pregunta 23
+## Pregunta 15
 
-¿Qué hace `position: fixed`?
+Dado el siguiente CSS, ¿de qué color será el fondo?
 
-- Fija el elemento en su posición original
-- Posiciona el elemento relativo al ancestro
-- Posiciona el elemento relativo al viewport
-- No hace nada
+```css
+.box { background: blue; }
+.box { background: green; }
+.box { background: red; }
+```
 
----
-layout: question
----
-
-## Pregunta 24
-
-¿Flexbox es un modelo de layout...?
-
-- Bidimensional (filas y columnas)
-- Tridimensional
-- Unidimensional (fila o columna)
-- Sin dimensiones
+- blue
+- green
+- red
+- Ninguno, hay un conflicto
 
 ---
 layout: question
 ---
 
-## Pregunta 25
+## Pregunta 16
 
-¿Qué propiedad de flexbox se usa para centrar items en el eje principal?
+Dado el siguiente CSS, ¿de qué color será el borde?
 
-- align-items
-- justify-content
-- text-align
-- center-items
+```css
+div.item { border-color: blue; }
+.item { border-color: green; }
+```
 
----
-layout: question
----
-
-## Pregunta 26
-
-¿CSS Grid es un modelo de layout...?
-
-- Unidimensional (fila o columna)
-- Solo para texto
-- Bidimensional (filas y columnas)
-- Solo para imágenes
+- blue
+- green
+- negro (valor por defecto)
+- Ambos colores se mezclan
 
 ---
 layout: question
 ---
 
-## Pregunta 27
+## Pregunta 17
+
+Dado el siguiente CSS, ¿qué tamaño de fuente se aplicará?
+
+```css
+p { font-size: 14px; }
+p { font-size: 16px; }
+#texto { font-size: 18px; }
+```
+
+HTML: `<p id="texto">Hola</p>`
+
+- 14px
+- 16px
+- 18px
+- 16px y 18px se combinan
+
+---
+layout: question
+---
+
+## Pregunta 18
+
+¿Cuál es la diferencia entre Flexbox y Grid?
+
+- Flexbox es unidimensional (fila o columna), Grid es bidimensional (filas y columnas)
+- Flexbox es bidimensional, Grid es unidimensional
+- Ambos son unidimensionales
+- Ambos son bidimensionales
+
+---
+layout: question
+---
+
+## Pregunta 19
 
 ¿Para qué se usan las media queries?
 
@@ -388,7 +289,7 @@ layout: question
 layout: question
 ---
 
-## Pregunta 28
+## Pregunta 20
 
 ¿Qué es el enfoque "Mobile First"?
 
@@ -401,7 +302,7 @@ layout: question
 layout: question
 ---
 
-## Pregunta 29
+## Pregunta 21
 
 ¿Qué significa `vw` en CSS?
 
@@ -414,7 +315,7 @@ layout: question
 layout: question
 ---
 
-## Pregunta 30
+## Pregunta 22
 
 ¿Qué es BEM?
 
@@ -427,7 +328,7 @@ layout: question
 layout: question
 ---
 
-## Pregunta 31
+## Pregunta 23
 
 En BEM, ¿qué significa el "Block"?
 
@@ -437,88 +338,52 @@ En BEM, ¿qué significa el "Block"?
 - Una clase prohibida
 
 ---
-layout: question-content
+layout: question
 ---
 
-## Pregunta 32
+## Pregunta 24
 
 En BEM, ¿cómo se separan los elementos del bloque?
 
-::content::
-```css
-.card { }
-.card__title { }
-.card__body { }
-.card__footer { }
-```
-
-::options::
 - Con un guion: `block-element`
 - Con doble guion bajo: `block__element`
 - Con punto: `block.element`
 - Con slash: `block/element`
 
 ---
-layout: question-content
+layout: question
 ---
 
-## Pregunta 33
+## Pregunta 25
 
 En BEM, ¿cómo se separan los modificadores?
 
-::content::
-```css
-.button { }
-.button--primary { }
-.button--large { }
-.button--disabled { }
-```
-
-::options::
 - Con doble guion: `block--modifier`
 - Con guion bajo: `block_modifier`
 - Con punto: `block.modifier`
 - Con dos puntos: `block:modifier`
 
 ---
-layout: question-content
+layout: question
 ---
 
-## Pregunta 34
+## Pregunta 26
 
 ¿Cómo se definen variables CSS?
 
-::content::
-```css
-:root {
-  --primary-color: #007bff;
-  --font-size: 16px;
-}
-```
-
-::options::
 - `var-name: value;`
 - `$name: value;`
 - `--name: value;`
 - `@name: value;`
 
 ---
-layout: question-content
+layout: question
 ---
 
-## Pregunta 35
+## Pregunta 27
 
 ¿Cómo se usan las variables CSS?
 
-::content::
-```css
-.button {
-  background: var(--primary-color);
-  font-size: var(--font-size);
-}
-```
-
-::options::
 - `value(--name)`
 - `var(--name)`
 - `use(--name)`
@@ -528,7 +393,7 @@ layout: question-content
 layout: question
 ---
 
-## Pregunta 36
+## Pregunta 28
 
 ¿Qué unidad CSS es relativa al tamaño de fuente del root?
 
@@ -541,7 +406,7 @@ layout: question
 layout: question
 ---
 
-## Pregunta 37
+## Pregunta 29
 
 ¿Cuál es el breakpoint común para tablets?
 
@@ -554,7 +419,7 @@ layout: question
 layout: question
 ---
 
-## Pregunta 38
+## Pregunta 30
 
 ¿Qué propiedad grid se usa para definir el espacio entre items?
 
@@ -562,32 +427,6 @@ layout: question
 - margin
 - gap
 - padding
-
----
-layout: question
----
-
-## Pregunta 39
-
-¿Cuándo deberías usar Flexbox en lugar de Grid?
-
-- Para layouts complejos bidimensionales
-- Para alinear elementos en una dirección
-- Para crear galerías de imágenes
-- Siempre se debe usar Grid
-
----
-layout: question
----
-
-## Pregunta 40
-
-¿Qué meta tag es esencial para diseño responsivo?
-
-- `<meta name="responsive">`
-- `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
-- `<meta name="mobile">`
-- `<meta name="device">`
 
 ---
 layout: cover

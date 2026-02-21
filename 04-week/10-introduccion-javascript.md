@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Introducción a JavaScript
-exportFilename: 06-introduccion-javascript
+exportFilename: 10-introduccion-javascript
 ---
 
 # Introducción a JavaScript
@@ -32,7 +32,7 @@ Es el único lenguaje que funciona nativamente en todos los navegadores.
 **Función primaria**: Brindar interactividad a páginas web
 
 ::header::
-Semana 2: Introducción a JavaScript
+Semana 5: Introducción a JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -51,7 +51,7 @@ layout: default-y-center
 Juntos forman la base del desarrollo web frontend.
 
 ::header::
-Semana 2: Introducción a JavaScript
+Semana 5: Introducción a JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -71,7 +71,7 @@ layout: default-y-center
 - Durante la Web 1.0 (< 2004), JS era exclusivamente para el navegador
 
 ::header::
-Semana 2: Introducción a JavaScript
+Semana 5: Introducción a JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -89,7 +89,7 @@ layout: default-y-center
 - Reacciona a eventos del usuario o del sistema
 
 ::header::
-Semana 2: Introducción a JavaScript
+Semana 5: Introducción a JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -119,7 +119,7 @@ layout: default-y-center
 ```
 
 ::header::
-Semana 2: Introducción a JavaScript
+Semana 5: Introducción a JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -142,7 +142,7 @@ console.log('Valor:', 42);
 ```
 
 ::header::
-Semana 2: Introducción a JavaScript
+Semana 5: Introducción a JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -174,7 +174,7 @@ document.body.innerHTML = '<h1>Hola Mundo</h1>';
 ```
 
 ::header::
-Semana 2: Introducción a JavaScript
+Semana 5: Introducción a JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -199,7 +199,7 @@ layout: default-y-center
 **Angular**, creado por Google.
 
 ::header::
-Semana 2: Introducción a JavaScript
+Semana 5: Introducción a JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -224,7 +224,7 @@ layout: default-y-center
 - npm, yarn, pnpm
 
 ::header::
-Semana 2: Introducción a JavaScript
+Semana 5: Introducción a JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -244,7 +244,7 @@ layout: default-y-center
 - Utilizar un repositorio de Git para manejar versionamiento
 
 ::header::
-Semana 2: Introducción a JavaScript
+Semana 5: Introducción a JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -262,7 +262,7 @@ layout: default-y-center
 - Git instalado
 
 ::header::
-Semana 2: Introducción a JavaScript
+Semana 5: Introducción a JavaScript
 
 ::footer::
 {{ $page }} / {{ $nav.total }}

@@ -78,6 +78,7 @@ const props = defineProps({
   transition: all 0.3s ease;
   cursor: pointer;
   font-size: 1.1rem;
+  text-align: center;
 }
 
 .question :deep(li:hover) {
