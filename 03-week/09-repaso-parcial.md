@@ -98,7 +98,7 @@ layout: cover
 layout: default-y-center
 ---
 
-## ¿Qué es HTML?
+## Qué es HTML?
 
 ::contents::
 - Lenguaje de **marcado** estándar para crear páginas web
@@ -396,7 +396,7 @@ layout: cover
 layout: default-y-center
 ---
 
-## ¿Qué es CSS?
+## Qué es CSS?
 
 ::contents::
 **CSS** = Cascading Style Sheets
@@ -1416,7 +1416,7 @@ Repaso Parcial
 layout: default-y-center
 ---
 
-## Flexbox vs Grid - ¿Cuándo usar cada uno?
+## Flexbox vs Grid - Cuándo usar cada uno?
 
 ::contents::
 **Flexbox** (unidimensional):

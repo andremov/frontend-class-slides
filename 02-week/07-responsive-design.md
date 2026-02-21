@@ -15,7 +15,7 @@ exportFilename: 07-responsive-design
 layout: cover
 ---
 
-# ¿Qué es Diseño Responsivo?
+# Qué es Diseño Responsivo?
 
 ---
 layout: default-y-center
@@ -122,7 +122,7 @@ layout: cover
 layout: default-y-center
 ---
 
-## ¿Qué es Mobile First?
+## Qué es Mobile First?
 
 ::contents::
 **Mobile First** es un enfoque de diseño que comienza con la versión móvil y luego escala hacia arriba.

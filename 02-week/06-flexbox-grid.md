@@ -348,7 +348,7 @@ layout: cover
 layout: two-cols-centered
 ---
 
-## ¿Cuándo usar cada uno?
+## Cuándo usar cada uno?
 
 ::left::
 **Flexbox** (1D):

@@ -15,7 +15,7 @@ exportFilename: 14-taller-02
 layout: default-y-center
 ---
 
-## ¿Qué hay que hacer?
+## Qué hay que hacer?
 
 ::contents::
 A partir de la **imagen de referencia** que se les suministra, deben recrear la página como una aplicación de **React** usando Vite.

@@ -88,7 +88,7 @@ const answer = 42;
 layout: question
 ---
 
-## ¿Qué es Front-end?
+## Qué es Front-end?
 
 - El servidor que maneja los datos
 - Aquello que el usuario ve y manipula
@@ -103,7 +103,7 @@ layout: question
 layout: question-content
 ---
 
-## ¿Cuál es la sintaxis correcta de CSS?
+## Cuál es la sintaxis correcta de CSS?
 
 ::content::
 ```css
@@ -126,7 +126,7 @@ layout: question-content
 layout: question-content
 ---
 
-## ¿Cuál es la estructura básica de HTML?
+## Cuál es la estructura básica de HTML?
 
 ::content::
 ```html

@@ -14,7 +14,7 @@ exportFilename: 12-node-npm
 layout: default-y-center
 ---
 
-## ¿Qué es Node.js?
+## Qué es Node.js?
 
 ::contents::
 Normalmente, JavaScript solo corre en el **navegador**.
@@ -39,7 +39,7 @@ Semana 5: Node.js y NPM
 layout: default-y-center
 ---
 
-## ¿Qué es NPM?
+## Qué es NPM?
 
 ::contents::
 **NPM** (Node Package Manager) es el gestor de paquetes de Node.

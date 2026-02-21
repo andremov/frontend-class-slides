@@ -15,7 +15,7 @@ exportFilename: 13-react
 layout: default-y-center
 ---
 
-## ¿Qué es React?
+## Qué es React?
 
 ::contents::
 - Una **librería** de JavaScript para construir interfaces de usuario

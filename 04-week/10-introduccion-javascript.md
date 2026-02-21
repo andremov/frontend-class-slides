@@ -14,7 +14,7 @@ exportFilename: 10-introduccion-javascript
 layout: cover
 ---
 
-# ¿Qué es JavaScript?
+# Qué es JavaScript?
 
 ---
 layout: default-y-center
@@ -233,7 +233,7 @@ Semana 5: Introducción a JavaScript
 layout: default-y-center
 ---
 
-## Entonces, ¿qué haremos en este curso?
+## Entonces, qué haremos en este curso?
 
 ::contents::
 - Crear componentes de React
@@ -253,7 +253,7 @@ Semana 5: Introducción a JavaScript
 layout: default-y-center
 ---
 
-## ¿Qué se necesita para comenzar?
+## Qué se necesita para comenzar?
 
 ::contents::
 - NodeJS instalado

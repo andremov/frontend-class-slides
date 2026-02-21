@@ -15,7 +15,7 @@ exportFilename: 08-bem
 layout: cover
 ---
 
-# ¿Qué es BEM?
+# Qué es BEM?
 
 ---
 layout: default-y-center

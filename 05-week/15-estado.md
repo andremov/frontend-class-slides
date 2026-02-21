@@ -21,7 +21,7 @@ layout: cover
 layout: default-y-center
 ---
 
-## ¿Dónde poner el estado?
+## Dónde poner el estado?
 
 ::contents::
 **Regla:** el estado va en el componente más cercano que lo necesita.
@@ -455,7 +455,7 @@ Semana 5: React
 layout: default-y-center
 ---
 
-## ¿Qué usar y cuándo?
+## Qué usar y cuándo?
 
 ::contents::
 | Situación | Solución recomendada |

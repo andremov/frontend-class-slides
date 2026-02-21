@@ -15,7 +15,7 @@ exportFilename: 10-taller-01
 layout: default-y-center
 ---
 
-## ¿Qué hay que hacer?
+## Qué hay que hacer?
 
 ::contents::
 A partir de las **imágenes de referencia** que se les suministran, deben recrear una página web completa usando solo **HTML y CSS**.
