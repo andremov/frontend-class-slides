@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Data Fetching y useEffect
-exportFilename: 15-data-fetching
+exportFilename: 17-data-fetching
 ---
 
 # Data Fetching

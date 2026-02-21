@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Ciclo de Vida de un Componente
-exportFilename: 18-ciclo-de-vida
+exportFilename: 16-ciclo-de-vida
 ---
 
 # Ciclo de Vida
@@ -28,7 +28,7 @@ Todo componente de React pasa por **tres fases** durante su existencia:
         ┌──────▼──────┐
         │   UPDATING  │  ← cambian sus props o su estado
         └──────┬──────┘
-               │ (puede repetirse muchas veces)
+               │
         ┌──────▼──────┐
         │  UNMOUNTING │  ← el componente desaparece de pantalla
         └─────────────┘
@@ -58,7 +58,7 @@ layout: default-y-center
 ## Métodos del ciclo de vida
 
 ::contents::
-Los **class components** tienen métodos explícitos para cada fase. Esto hace el ciclo de vida muy visible:
+Los **class components** tienen métodos explícitos para cada fase.
 
 ```jsx
 class MiComponente extends React.Component {
@@ -74,10 +74,68 @@ class MiComponente extends React.Component {
     // Ideal para: llamadas a API, subscripciones, timers
   }
 
+  render() {
+    return <div>{this.state.datos}</div>;
+  }
+}
+```
+
+::header::
+Semana 5: React
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+
+---
+layout: default-y-center
+---
+
+## Métodos del ciclo de vida
+
+::contents::
+```jsx
+class MiComponente extends React.Component {
+
+  // ── MOUNTING ──────────────────────────────────────────
+  constructor(props) {
+    super(props);
+    this.state = { datos: null }; // estado inicial
+  }
+  
   // ── UPDATING ──────────────────────────────────────────
   componentDidUpdate(prevProps, prevState) {
     // Se ejecuta después de cada re-render
     // prevProps y prevState contienen los valores anteriores
+  }
+
+  render() {
+    return <div>{this.state.datos}</div>;
+  }
+}
+```
+
+::header::
+Semana 5: React
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+
+---
+layout: default-y-center
+---
+
+## Métodos del ciclo de vida
+
+::contents::
+```jsx
+class MiComponente extends React.Component {
+
+  // ── MOUNTING ──────────────────────────────────────────
+  constructor(props) {
+    super(props);
+    this.state = { datos: null }; // estado inicial
   }
 
   // ── UNMOUNTING ────────────────────────────────────────
@@ -117,7 +175,6 @@ class Reloj extends React.Component {
 
   componentDidMount() {
     // 3. El componente ya está en el DOM
-    // Buen momento para iniciar efectos secundarios
     this.intervalo = setInterval(() => {
       this.setState({ hora: new Date() });
     }, 1000);
@@ -129,11 +186,6 @@ class Reloj extends React.Component {
   }
 }
 ```
-
-**Orden de ejecución en mounting:**
-1. `constructor()` → inicializar estado
-2. `render()` → pintar el JSX
-3. `componentDidMount()` → el DOM ya está listo
 
 ::header::
 Semana 5: React
@@ -174,8 +226,6 @@ class Perfil extends React.Component {
 }
 ```
 
-**Importante:** siempre comparar con `prevProps` / `prevState` antes de hacer algo en `componentDidUpdate`, de lo contrario se puede producir un **loop infinito**.
-
 ::header::
 Semana 5: React
 
@@ -211,6 +261,19 @@ class Reloj extends React.Component {
 }
 ```
 
+::header::
+Semana 5: React
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+## Unmounting
+
+::contents::
 **Por qué limpiar?**
 
 Si no cancelas el timer cuando el componente se desmonta, el timer sigue corriendo en memoria e intenta actualizar el estado de un componente que ya no existe → **memory leak** y errores en consola.
@@ -249,6 +312,21 @@ useEffect(() => {
 }, [dependencias]); // controla cuándo se ejecuta
 ```
 
+El **array de dependencias** es el que determina a cuál método equivale:
+
+::header::
+Semana 5: React
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+## useEffect reemplaza los tres métodos
+
+::contents::
 El **array de dependencias** es el que determina a cuál método equivale:
 
 | Array | Equivale a |
@@ -306,8 +384,6 @@ function Ejemplo() {
 }
 ```
 
-> `[]` le dice a React: "no tienes dependencias, solo córrelo al montar".
-
 ::header::
 Semana 5: React
 
@@ -358,8 +434,6 @@ function Perfil({ id }) {
   return ...;
 }
 ```
-
-> React hace la comparación automáticamente. No necesitas `prevProps`.
 
 ::header::
 Semana 5: React
@@ -432,7 +506,7 @@ function Perfil({ id }) {
   const [perfil, setPerfil] = useState(null);
 
   useEffect(() => {
-    // ① Corre al montar Y cuando id cambia (componentDidMount + componentDidUpdate)
+    // 1. Corre al montar Y cuando id cambia (componentDidMount + componentDidUpdate)
     const controller = new AbortController();
 
     fetch(`/api/perfil/${id}`, { signal: controller.signal })
@@ -440,11 +514,11 @@ function Perfil({ id }) {
       .then(d => setPerfil(d))
       .catch(err => { if (err.name !== 'AbortError') console.error(err); });
 
-    // ② Cleanup: cancela el fetch si el componente se desmonta
+    // 2. Cleanup: cancela el fetch si el componente se desmonta
     //    o si id cambia antes de que termine (componentWillUnmount)
     return () => controller.abort();
 
-  }, [id]); // ③ Dependencia: se re-ejecuta cuando id cambia
+  }, [id]); // 3. Dependencia: se re-ejecuta cuando id cambia
 
   if (!perfil) return <p>Cargando...</p>;
   return <h1>{perfil.nombre}</h1>;
