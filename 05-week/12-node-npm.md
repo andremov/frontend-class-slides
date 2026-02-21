@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Node.js y NPM
-exportFilename: 11-node-npm
+exportFilename: 12-node-npm
 ---
 
 # Node.js y NPM
