@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Data Fetching y useEffect
-exportFilename: 18-data-fetching
+exportFilename: 20-data-fetching
 ---
 
 # Data Fetching
@@ -507,3 +507,9 @@ Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# 🎉

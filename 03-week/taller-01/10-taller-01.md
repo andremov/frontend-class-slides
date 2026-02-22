@@ -102,3 +102,9 @@ Taller 01
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# 🎉

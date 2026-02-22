@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Error Boundaries
-exportFilename: 19-error-boundaries
+exportFilename: 21-error-boundaries
 ---
 
 # Error Boundaries
@@ -194,3 +194,9 @@ Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# 🎉

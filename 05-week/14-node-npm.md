@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Node.js y NPM
-exportFilename: 13-node-npm
+exportFilename: 14-node-npm
 ---
 
 # Node.js y NPM
@@ -213,3 +213,9 @@ Semana 5: Node.js y NPM
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# 🎉

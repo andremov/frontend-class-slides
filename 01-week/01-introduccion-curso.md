@@ -92,3 +92,9 @@ Semana 1: Introduccion al curso
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# 🎉

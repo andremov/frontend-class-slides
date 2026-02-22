@@ -89,3 +89,9 @@ Semana 1: Info Previa
 ::footer::
 {{ $page }} / {{ $nav.total }}
 
+
+---
+layout: cover
+---
+
+# 🎉

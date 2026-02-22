@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Ciclo de Vida de un Componente
-exportFilename: 17-ciclo-de-vida
+exportFilename: 18-ciclo-de-vida
 ---
 
 # Ciclo de Vida
@@ -557,3 +557,9 @@ Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# 🎉

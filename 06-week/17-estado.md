@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Estado Avanzado y Gestión del Estado
-exportFilename: 16-estado
+exportFilename: 17-estado
 ---
 
 # Estado Avanzado
@@ -474,3 +474,9 @@ Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# 🎉

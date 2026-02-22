@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Fundamentos de React
-exportFilename: 14-react
+exportFilename: 15-react
 ---
 
 # React
@@ -574,3 +574,9 @@ Semana 5: React
 ::footer::
 {{ $page }} / {{ $nav.total }}
 
+
+---
+layout: cover
+---
+
+# 🎉

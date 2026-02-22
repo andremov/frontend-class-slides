@@ -304,3 +304,9 @@ Semana 1: Introduccion al frontend
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# 🎉

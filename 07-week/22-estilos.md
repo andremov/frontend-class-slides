@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Estilos en React
-exportFilename: 20-estilos
+exportFilename: 22-estilos
 ---
 
 # Estilos en React
@@ -468,3 +468,9 @@ Semana 7: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# 🎉

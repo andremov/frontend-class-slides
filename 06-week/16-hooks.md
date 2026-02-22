@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: React Hooks
-exportFilename: 15-hooks
+exportFilename: 16-hooks
 ---
 
 # React Hooks
@@ -572,3 +572,9 @@ Semana 6: React
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# 🎉

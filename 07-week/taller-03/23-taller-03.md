@@ -3,7 +3,7 @@ theme: ../../theme
 transition: none
 layout: cover
 title: Taller 03 - React y Data Fetching
-exportFilename: 21-taller-03
+exportFilename: 23-taller-03
 ---
 
 # Taller 03
@@ -231,3 +231,9 @@ Taller 03
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# 🎉
