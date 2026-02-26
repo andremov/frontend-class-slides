@@ -2,11 +2,11 @@
 theme: ../theme
 transition: none
 layout: cover
-title: Examen de Medio Término
+title: Examen Parcial 01
 exportFilename: 12-midterm-exam
 ---
 
-# Examen de Medio Término
+# Examen Parcial 01
 
 📝 Desarrollo Front-End ➖ 2026-01
 
