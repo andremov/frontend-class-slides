@@ -350,13 +350,13 @@ git branch
 git branch feature/login
 
 # Cambiar a una rama
-git switch feature/login
+git checkout feature/login
 
 # Crear y cambiar en un solo paso
-git switch -c feature/login
+git checkout -b feature/login
 
 # Volver a main
-git switch main
+git checkout main
 ```
 
 ::header::
@@ -376,7 +376,7 @@ Fusiona los cambios de una rama en la actual.
 
 ```bash
 # Estando en main, fusionar feature/login
-git switch main
+git checkout main
 git merge feature/login
 ```
 
