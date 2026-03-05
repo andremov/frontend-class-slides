@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Patrones UX - Estados y Feedback
-exportFilename: 25-ux-estados
+exportFilename: 26-ux-estados
 ---
 
 # Patrones UX

@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Espaciado y Espacio Negativo
-exportFilename: 32-espaciado
+exportFilename: 34-espaciado
 ---
 
 # Espaciado

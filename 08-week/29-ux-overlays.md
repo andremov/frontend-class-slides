@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Patrones UX - Overlays
-exportFilename: 27-ux-overlays
+exportFilename: 29-ux-overlays
 ---
 
 # Patrones UX
@@ -301,6 +301,126 @@ layout: two-cols-centered
 - Requiere acción explícita para cerrar
 
 **Regla:** usa el componente menos intrusivo que resuelva el problema.
+
+::header::
+Semana 8: Patrones UX
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# Acciones Destructivas
+
+---
+layout: default-y-center
+---
+
+## Diseñar para la Pérdida de Datos
+
+::contents::
+Cuando el usuario puede perder trabajo, la interfaz debe **anticiparse y protegerlo**.
+
+**Las 3 estrategias principales:**
+
+**1. Confirmación antes de la acción**
+```jsx
+// Solo para acciones verdaderamente irreversibles
+<dialog>
+  <p>¿Eliminar "proyecto-final.zip"? Esta acción no se puede deshacer.</p>
+  <button autofocus>Cancelar</button>   {/* foco por defecto en Cancelar */}
+  <button className="peligro">Eliminar</button>
+</dialog>
+```
+
+**2. Deshacer después de la acción** (preferible)
+```jsx
+// Más amigable — deja actuar y da opción de revertir
+eliminarArchivo(id);
+mostrarToast('Archivo eliminado', { accion: 'Deshacer', onClick: restaurar });
+```
+
+**3. Guardado automático**
+```js
+// Evita la pregunta completamente
+useEffect(() => {
+  const timer = setTimeout(() => guardar(contenido), 1000);
+  return () => clearTimeout(timer);
+}, [contenido]);
+```
+
+::header::
+Semana 8: Patrones UX
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# Dark Patterns
+
+---
+layout: default-y-center
+---
+
+## Patrones Oscuros — El Desarrollador es Cómplice
+
+::contents::
+Un **dark pattern** es una interfaz diseñada para engañar al usuario para que haga algo que no quiere.
+
+**El problema:** alguien tiene que *escribir* ese código. Ese alguien eres tú.
+
+```html
+<!-- Confirm-shaming: hacer sentir mal al usuario por no aceptar -->
+<button>Sí, quiero ahorrar dinero</button>
+<button class="link-gris">No gracias, prefiero pagar más</button>
+
+<!-- Pre-checked: suscribirlo sin que lo pida -->
+<input type="checkbox" checked> Envíame ofertas y promociones
+
+<!-- Roach motel: fácil entrar, difícil salir -->
+<!-- Suscribirse: 1 click -->
+<!-- Cancelar: buscar en FAQ → llamar a soporte → esperar 30 min -->
+
+<!-- Misdirection: botón de acción visualmente escondido -->
+<button class="btn-primario">Aceptar todos</button>
+<button class="link-gris-minusculo">Rechazar</button>
+```
+
+::header::
+Semana 8: Patrones UX
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+## Por Qué Importa
+
+::contents::
+Los dark patterns **funcionan a corto plazo** — aumentan conversiones, reducen cancelaciones.
+
+Pero tienen costo real:
+- El usuario eventualmente se da cuenta y pierde confianza
+- Daño a la reputación del producto y la empresa
+- En la Unión Europea, muchos son **ilegales** bajo GDPR y DSA
+
+**Como desarrollador frontend:**
+- Si el diseño que te llega usa un dark pattern, tienes la opción de señalarlo
+- "Esto puede violar GDPR" es un argumento técnico, no solo moral
+- Un cancel button honesto: **un click, sin fricción, sin culpa**
+
+```html
+<!-- ✅ Cancelación honesta -->
+<button>Cancelar suscripción</button>
+<!-- lleva directo al formulario de cancelación, no a una página de retención -->
+```
 
 ::header::
 Semana 8: Patrones UX

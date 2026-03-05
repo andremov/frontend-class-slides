@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Routing y Navegación
-exportFilename: 23-react-router
+exportFilename: 24-react-router
 ---
 
 # React Router
@@ -343,6 +343,56 @@ function PaginaNoEncontrada() {
 ```
 
 **Importante para deploy:** los servidores estáticos necesitan configuración para redirigir todas las URLs al `index.html`. Vercel lo hace automáticamente para proyectos Vite.
+
+::header::
+Semana 7: React
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# Diseño de URLs
+
+---
+layout: default-y-center
+---
+
+## URLs Legibles — Sin IDs, Con Slugs
+
+::contents::
+La URL es parte de la interfaz. Un usuario debe poder leerla y entender dónde está.
+
+```
+❌ URLs que nadie puede leer ni compartir:
+/productos/a1b2c3d4-e5f6-7890-abcd-ef1234567890
+/users/83729/posts/4921?ref=nav&src=email&utm_id=xyz
+
+✅ URLs limpias y predecibles:
+/productos/tenis-nike-air-max
+/blog/como-aprender-css-en-2025
+/dashboard/configuracion
+/u/maria-garcia
+```
+
+**Slug:** versión legible de un título, en minúsculas, palabras separadas con guiones.
+
+```js
+// Generar un slug desde un título
+function crearSlug(titulo) {
+  return titulo
+    .toLowerCase()
+    .normalize('NFD')                   // separar tildes
+    .replace(/[\u0300-\u036f]/g, '')    // quitar tildes
+    .replace(/[^a-z0-9\s-]/g, '')       // quitar caracteres especiales
+    .trim()
+    .replace(/\s+/g, '-');              // espacios → guiones
+}
+
+crearSlug('Tenis Nike Air Max 2024') // → "tenis-nike-air-max-2024"
+```
 
 ::header::
 Semana 7: React

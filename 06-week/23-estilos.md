@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Estilos en React
-exportFilename: 22-estilos
+exportFilename: 23-estilos
 ---
 
 # Estilos en React

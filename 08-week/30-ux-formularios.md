@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Patrones UX - Formularios
-exportFilename: 28-ux-formularios
+exportFilename: 30-ux-formularios
 ---
 
 # Patrones UX

@@ -1,7 +1,29 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git mv:*)"
+      "Bash(git mv:*)",
+      "Bash(mv 10-week/38-microinteracciones.md 10-week/40-microinteracciones.md)",
+      "Bash(mv 10-week/35-accesibilidad-visual.md 10-week/39-accesibilidad-visual.md)",
+      "Bash(mv 10-week/34-accesibilidad-aria.md 10-week/38-accesibilidad-aria.md)",
+      "Bash(mv 10-week/33-accesibilidad-intro.md 10-week/37-accesibilidad-intro.md)",
+      "Bash(mv 09-week/32c-microcopy.md 09-week/36-microcopy.md)",
+      "Bash(mv 09-week/32b-svg.md 09-week/35-svg.md)",
+      "Bash(mv 09-week/32-espaciado.md 09-week/34-espaciado.md)",
+      "Bash(mv 09-week/31-teoria-color.md 09-week/33-teoria-color.md)",
+      "Bash(mv 09-week/30-tipografia.md 09-week/32-tipografia.md)",
+      "Bash(mv 09-week/29-jerarquia-visual.md 09-week/31-jerarquia-visual.md)",
+      "Bash(mv 08-week/28-ux-formularios.md 08-week/30-ux-formularios.md)",
+      "Bash(mv 08-week/27-ux-overlays.md 08-week/29-ux-overlays.md)",
+      "Bash(mv 08-week/26-forms.md 08-week/28-forms.md)",
+      "Bash(mv 07-week/25b-browser-apis.md 07-week/27-browser-apis.md)",
+      "Bash(mv 07-week/25-ux-estados.md 07-week/26-ux-estados.md)",
+      "Bash(mv 07-week/24-ux-navegacion.md 07-week/25-ux-navegacion.md)",
+      "Bash(mv 07-week/23-react-router.md 07-week/24-react-router.md)",
+      "Bash(mv 06-week/22-estilos.md 06-week/23-estilos.md)",
+      "Bash(mv 06-week/21b-persistencia-estado.md 06-week/22-persistencia-estado.md)",
+      "Bash(mv 12-midterm-exam.md 12-parcial-01.md)",
+      "Bash(mv 12-midterm-exam.csv 12-parcial-01.csv)",
+      "Bash(mv 12-midterm-exam.pdf 12-parcial-01.pdf)"
     ]
   }
 }

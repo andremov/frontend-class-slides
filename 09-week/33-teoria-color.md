@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Teoría del Color
-exportFilename: 31-teoria-color
+exportFilename: 33-teoria-color
 ---
 
 # Teoría del Color

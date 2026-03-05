@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Tipografía para Web
-exportFilename: 30-tipografia
+exportFilename: 32-tipografia
 ---
 
 # Tipografía para Web

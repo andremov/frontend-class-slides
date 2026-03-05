@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: ARIA y Navegación por Teclado
-exportFilename: 34-accesibilidad-aria
+exportFilename: 38-accesibilidad-aria
 ---
 
 # ARIA y Navegación
@@ -312,6 +312,101 @@ Los usuarios de teclado deben tabear por toda la navegación en cada página. Lo
   z-index: 9999;
 }
 ```
+
+::header::
+Semana 10: Accesibilidad
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# Atajos de Teclado
+
+---
+layout: default-y-center
+---
+
+## Cmd+K — La Paleta de Comandos
+
+::contents::
+La paleta de comandos (command palette) es un input de búsqueda global que agrupa todas las acciones de la app en un solo lugar.
+
+Se activa con `Cmd+K` (Mac) o `Ctrl+K` (Windows/Linux). La usan Figma, Linear, Notion, Vercel, GitHub.
+
+```js
+// Escuchar el atajo globalmente
+useEffect(() => {
+  function handleKeyDown(e) {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      abrirPaleta();
+    }
+  }
+  window.addEventListener('keydown', handleKeyDown);
+  return () => window.removeEventListener('keydown', handleKeyDown);
+}, []);
+```
+
+```html
+<!-- La paleta es un modal con un input de búsqueda -->
+<dialog role="dialog" aria-label="Paleta de comandos">
+  <input
+    type="search"
+    placeholder="Buscar acciones..."
+    aria-controls="lista-comandos"
+    aria-autocomplete="list"
+  />
+  <ul id="lista-comandos" role="listbox">
+    <li role="option">Ir al Dashboard</li>
+    <li role="option">Crear nuevo proyecto</li>
+    <li role="option">Configuración</li>
+  </ul>
+</dialog>
+```
+
+::header::
+Semana 10: Accesibilidad
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+## Por Qué Importa la Paleta de Comandos
+
+::contents::
+**Para usuarios de teclado:** acceso directo a cualquier acción sin navegar por menús.
+
+**Para usuarios avanzados:** flujo más rápido que usar el mouse.
+
+**Para accesibilidad:** centraliza la navegación en un solo componente bien construido.
+
+```js
+// Navegar la lista con flechas — patrón estándar
+function handleKeyDown(e) {
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    setSeleccionado(prev => Math.min(prev + 1, comandos.length - 1));
+  }
+  if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    setSeleccionado(prev => Math.max(prev - 1, 0));
+  }
+  if (e.key === 'Enter') {
+    ejecutar(comandos[seleccionado]);
+  }
+  if (e.key === 'Escape') {
+    cerrarPaleta();
+  }
+}
+```
+
+**Librerías:** `cmdk` (React), `kbar` (React). No hay que construirlo desde cero.
 
 ::header::
 Semana 10: Accesibilidad

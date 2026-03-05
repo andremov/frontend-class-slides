@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Examen Parcial 01
-exportFilename: 12-midterm-exam
+exportFilename: 12-parcial-01
 ---
 
 # Examen Parcial 01

@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Jerarquía Visual
-exportFilename: 29-jerarquia-visual
+exportFilename: 31-jerarquia-visual
 ---
 
 # Jerarquía Visual
@@ -206,6 +206,88 @@ El color llama la atención antes que el texto. Úsalo con intención.
 ```
 
 **Regla:** un solo color de acción por página. Si todo es azul, nada llama la atención.
+
+::header::
+Semana 9: Diseño Web
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# Alineación Óptica
+
+---
+layout: default-y-center
+---
+
+## Alineación Geométrica vs Óptica
+
+::contents::
+**Alineación geométrica:** centrado matemático, calculado por el navegador.
+
+**Alineación óptica:** ajustado manualmente para que *se vea* centrado al ojo humano.
+
+```css
+/* Un ícono dentro de un botón — geométricamente centrado */
+.boton-icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px; /* igual en todos los lados */
+}
+
+/* Muchos íconos tienen más espacio visual arriba que abajo.
+   Compensar con padding asimétrico: */
+.boton-icono {
+  padding: 11px 12px 13px; /* top menor, bottom mayor */
+}
+```
+
+El cerebro evalúa el peso visual, no las coordenadas. Un triángulo geométricamente centrado parece estar más abajo de lo que está.
+
+::header::
+Semana 9: Diseño Web
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+## Casos Comunes de Ajuste Óptico
+
+::contents::
+```css
+/* 1. Texto en botón — las mayúsculas necesitan más espacio arriba */
+.boton {
+  padding: 10px 16px 12px; /* fondo ligeramente mayor */
+}
+
+/* 2. Ícono junto a texto — los íconos SVG suelen necesitar 1-2px de ajuste */
+.icono-con-texto {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icono-con-texto svg {
+  position: relative;
+  top: 1px; /* corrección óptica frecuente */
+}
+
+/* 3. Número dentro de un círculo — el número parece estar alto */
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px; /* compensa el peso visual de la tipografía */
+}
+```
+
+**Regla:** si algo se ve mal aunque sea matemáticamente correcto, confía en el ojo y ajusta.
 
 ::header::
 Semana 9: Diseño Web

@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Patrones UX - Navegación
-exportFilename: 24-ux-navegacion
+exportFilename: 25-ux-navegacion
 ---
 
 # Patrones UX
