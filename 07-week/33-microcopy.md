@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Microcopy y UX Writing
-exportFilename: 36-microcopy
+exportFilename: 33-microcopy
 ---
 
 # Microcopy
@@ -43,7 +43,7 @@ layout: default-y-center
 El microcopy bueno es **invisible**. El malo detiene al usuario.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -85,7 +85,7 @@ La **voz activa** es directa, corta y más fácil de procesar. La **voz pasiva**
 Máximo **7 palabras por oración** en mensajes de interfaz. Si necesitas más, divide en dos oraciones.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -126,7 +126,7 @@ La etiqueta de un botón debe describir la **acción**, no el estado. Usa verbos
 ```
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -165,7 +165,7 @@ layout: default-y-center
 ```
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -194,7 +194,7 @@ layout: default-y-center
 ❌ No uses el placeholder como reemplazo de `<label>` — desaparece al escribir
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}

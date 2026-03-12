@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Espaciado y Espacio Negativo
-exportFilename: 34-espaciado
+exportFilename: 31-espaciado
 ---
 
 # Espaciado
@@ -42,7 +42,7 @@ El espacio en blanco (whitespace o espacio negativo) hace que el contenido respi
 > *"El espacio en blanco en el diseño es como el silencio en la música."*
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -79,7 +79,7 @@ La mayoría de pantallas modernas tienen densidades que son múltiplos de 8 pixe
 **Resultado:** consistencia visual en toda la interfaz.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -115,7 +115,7 @@ layout: default-y-center
 **Tip:** Tailwind CSS sigue exactamente este sistema (p-4, p-6, p-8...).
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -154,7 +154,7 @@ layout: default-y-center
 **Margin:** espacio *fuera* del componente (separa de otros elementos)
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -203,7 +203,7 @@ layout: two-cols-centered
 ```
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -245,7 +245,7 @@ Los elementos con menos espacio entre ellos se perciben como un grupo.
 **Regla:** el espacio *entre* grupos debe ser mayor que el espacio *dentro* de un grupo.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -283,7 +283,7 @@ p + p { margin-top: 0; } /* gap ya está en margin-bottom */
 ```
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -318,7 +318,7 @@ layout: default-y-center
 **Ventaja:** `gap` no aplica en los bordes — no hay margin extra en el primero ni en el último hijo.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -347,7 +347,7 @@ layout: default-y-center
 ❌ No tengas miedo del espacio en blanco — no es espacio desperdiciado
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}

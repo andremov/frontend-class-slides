@@ -159,6 +159,19 @@ El estado vacío aparece cuando no hay datos que mostrar. Es una oportunidad de 
 3. Descripción corta con contexto
 4. Llamada a la acción para resolver la situación
 
+::header::
+Semana 7: Patrones UX
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+## Diseñar el Estado Vacío
+
+::contents::
 ```jsx
 function EstadoVacio() {
   return (
@@ -199,6 +212,19 @@ Un mensaje de error útil tiene 3 partes:
 2. **Por qué** — si es relevante para el usuario
 3. **Qué hacer** — siguiente paso accionable
 
+::header::
+Semana 7: Patrones UX
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+## Errores Útiles
+
+::contents::
 ```jsx
 // ❌ Error inútil
 <p>Error 503</p>
@@ -247,20 +273,12 @@ function Toast({ tipo, mensaje, onCerrar }) {
   }, [onCerrar])
 
   return (
-    <div
-      className={`toast toast--${tipo}`}
-      role="status"
-      aria-live="polite"
-    >
+    <div className={`toast toast--${tipo}`} role="status" aria-live="polite">
       <span className="toast__icono">
         {tipo === 'exito' ? '✅' : tipo === 'error' ? '❌' : 'ℹ️'}
       </span>
       <p className="toast__mensaje">{mensaje}</p>
-      <button
-        className="toast__cerrar"
-        aria-label="Cerrar notificación"
-        onClick={onCerrar}
-      >
+      <button className="toast__cerrar" aria-label="Cerrar notificación" onClick={onCerrar}>
         ✕
       </button>
     </div>

@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Jerarquía Visual
-exportFilename: 31-jerarquia-visual
+exportFilename: 28-jerarquia-visual
 ---
 
 # Jerarquía Visual
@@ -36,7 +36,7 @@ Con jerarquía, guiamos la mirada del usuario a través del contenido de forma i
 - Color
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -65,7 +65,7 @@ p  { font-size: 1rem;   font-weight: 400; color: #555; }
 El cerebro humano detecta diferencias de tamaño, peso y color instantáneamente.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -97,7 +97,7 @@ layout: default-y-center
 **Regla práctica:** usa al menos un **30% de diferencia** entre niveles para que se sienta como una jerarquía real, no una variación sutil.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -139,7 +139,7 @@ El contraste crea **énfasis**. El elemento con más contraste respecto al fondo
 **Uso intencional:** los elementos con menor importancia deben tener menor contraste.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -172,7 +172,7 @@ El peso tipográfico es una de las herramientas más sutiles y efectivas.
 **Consejo:** no necesitas usar todos los pesos. Elige 2–3 y úsalos consistentemente.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -208,7 +208,7 @@ El color llama la atención antes que el texto. Úsalo con intención.
 **Regla:** un solo color de acción por página. Si todo es azul, nada llama la atención.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -249,7 +249,7 @@ layout: default-y-center
 El cerebro evalúa el peso visual, no las coordenadas. Un triángulo geométricamente centrado parece estar más abajo de lo que está.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -290,7 +290,7 @@ layout: default-y-center
 **Regla:** si algo se ve mal aunque sea matemáticamente correcto, confía en el ojo y ajusta.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -327,7 +327,7 @@ Los estudios de seguimiento ocular muestran que los usuarios no leen, **escanean
 **Conclusión:** pon los elementos más importantes en las zonas de mayor atención.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -359,7 +359,7 @@ layout: default-y-center
 ```
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -383,7 +383,7 @@ layout: default-y-center
 La jerarquía funciona por **contraste entre elementos**, no por el valor absoluto de cada uno.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}

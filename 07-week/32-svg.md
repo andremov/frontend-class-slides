@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: SVG
-exportFilename: 35-svg
+exportFilename: 32-svg
 ---
 
 # SVG
@@ -39,7 +39,7 @@ layout: default-y-center
 **Regla práctica:** si lo creaste en Figma o Illustrator con formas → SVG. Si es una foto → JPG/WebP.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -83,7 +83,7 @@ SVG (Scalable Vector Graphics) es XML. Se puede escribir a mano, editar como có
 `viewBox="0 0 24 24"` define el sistema de coordenadas interno — independiente del tamaño real del SVG en pantalla.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -127,7 +127,7 @@ layout: default-y-center
 ```
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -166,7 +166,7 @@ svg { fill: currentColor; }
 ```
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -193,7 +193,7 @@ layout: default-y-center
 ❌ No uses `<img src="icono.svg">` para íconos que deben cambiar de color — no se pueden estilizar con CSS
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}

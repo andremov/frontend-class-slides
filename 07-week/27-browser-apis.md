@@ -25,8 +25,21 @@ layout: default-y-center
 ::contents::
 El navegador expone APIs que permiten acceder a capacidades del dispositivo y del sistema operativo.
 
-**APIs útiles en el día a día:**
+Todas son asíncronas. Muchas requieren permiso explícito del usuario.
 
+::header::
+Semana 7: React
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+## APIs útiles en el día a día
+
+::contents::
 | API | Para qué sirve |
 |---|---|
 | **Clipboard API** | Copiar y pegar texto desde/hacia el portapapeles |
@@ -37,7 +50,6 @@ El navegador expone APIs que permiten acceder a capacidades del dispositivo y de
 | **Intersection Observer** | Detectar cuándo un elemento entra al viewport |
 | **ResizeObserver** | Detectar cambios de tamaño en elementos |
 
-Todas son asíncronas. Muchas requieren permiso explícito del usuario.
 
 ::header::
 Semana 7: React
@@ -66,25 +78,6 @@ async function copiarTexto(texto) {
   } catch (err) {
     console.error('No se pudo copiar:', err);
   }
-}
-```
-
-```jsx
-// Patrón completo — botón "Copiar código"
-function BotonCopiar({ texto }) {
-  const [copiado, setCopiado] = useState(false);
-
-  async function handleCopiar() {
-    await navigator.clipboard.writeText(texto);
-    setCopiado(true);
-    setTimeout(() => setCopiado(false), 2000);
-  }
-
-  return (
-    <button onClick={handleCopiar}>
-      {copiado ? '✅ Copiado' : 'Copiar'}
-    </button>
-  );
 }
 ```
 
@@ -170,9 +163,29 @@ useEffect(() => {
 }, []);
 ```
 
+::header::
+Semana 7: React
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+## Detectar Elementos Visibles
+
+::contents::
 ```css
-.animar-al-entrar         { opacity: 0; transform: translateY(20px); transition: all 0.4s; }
-.animar-al-entrar.visible { opacity: 1; transform: translateY(0); }
+.animar-al-entrar         { 
+  opacity: 0;
+  transform: translateY(20px); transition: all 0.4s; 
+}
+
+.animar-al-entrar.visible { 
+  opacity: 1;
+  transform: translateY(0);
+}
 ```
 
 ::header::

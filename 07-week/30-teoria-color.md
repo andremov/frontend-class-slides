@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Teoría del Color
-exportFilename: 33-teoria-color
+exportFilename: 30-teoria-color
 ---
 
 # Teoría del Color
@@ -38,7 +38,7 @@ En diseño digital trabajamos con el modelo **RGB** (pantallas emiten luz):
 **Herramienta útil:** coolors.co, paletton.com, Adobe Color
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -76,7 +76,7 @@ Rojo + Amarillo + Azul
 **Monocromático** — un solo color en diferentes saturaciones y luminosidades. Elegante y consistente.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -116,7 +116,7 @@ color: hsl(220, 90%, 56%);
 ```
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -151,7 +151,7 @@ layout: default-y-center
 ```
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -182,7 +182,7 @@ layout: default-y-center
 ⚠️ **Importante:** estas asociaciones son culturales y contextuales. No son absolutas.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -220,7 +220,7 @@ body, .fondo { background: hsl(0, 0%, 98%); } /* casi blanco */
 El 10% de acento es lo que le da vida y personalidad al diseño. Si lo usas más, pierde impacto.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -261,7 +261,7 @@ layout: default-y-center
 ```
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -290,7 +290,7 @@ layout: default-y-center
 ❌ No relies en color como la única forma de comunicar información (accesibilidad)
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}

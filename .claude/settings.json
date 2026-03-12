@@ -23,7 +23,24 @@
       "Bash(mv 06-week/21b-persistencia-estado.md 06-week/22-persistencia-estado.md)",
       "Bash(mv 12-midterm-exam.md 12-parcial-01.md)",
       "Bash(mv 12-midterm-exam.csv 12-parcial-01.csv)",
-      "Bash(mv 12-midterm-exam.pdf 12-parcial-01.pdf)"
+      "Bash(mv 12-midterm-exam.pdf 12-parcial-01.pdf)",
+      "Bash(npx slidev:*)",
+      "Bash(npx playwright:*)",
+      "Bash(mv 31-jerarquia-visual.md 28-jerarquia-visual.md)",
+      "Bash(mv 31-jerarquia-visual.pdf 28-jerarquia-visual.pdf)",
+      "Bash(mv 32-tipografia.md 29-tipografia.md)",
+      "Bash(mv 32-tipografia.pdf 29-tipografia.pdf)",
+      "Bash(mv 33-teoria-color.md 30-teoria-color.md)",
+      "Bash(mv 33-teoria-color.pdf 30-teoria-color.pdf)",
+      "Bash(mv 34-espaciado.md 31-espaciado.md)",
+      "Bash(mv 34-espaciado.pdf 31-espaciado.pdf)",
+      "Bash(mv 35-svg.md 32-svg.md)",
+      "Bash(mv 35-svg.pdf 32-svg.pdf)",
+      "Bash(mv 36-microcopy.md 33-microcopy.md)",
+      "Bash(mv 36-microcopy.pdf 33-microcopy.pdf)"
+    ],
+    "additionalDirectories": [
+      "d:\\frontend-class-slides\\09-week"
     ]
   }
 }

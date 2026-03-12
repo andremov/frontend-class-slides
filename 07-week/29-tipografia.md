@@ -3,7 +3,7 @@ theme: ../theme
 transition: none
 layout: cover
 title: Tipografía para Web
-exportFilename: 32-tipografia
+exportFilename: 29-tipografia
 ---
 
 # Tipografía para Web
@@ -33,7 +33,7 @@ layout: default-y-center
 - **Display** — fuentes decorativas para titulares grandes. No usar para texto de cuerpo.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -68,7 +68,7 @@ xl:  1.563rem (~25px)
 **Regla:** usa siempre `rem`, no `px`, para respetar la configuración de fuente del usuario.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -102,7 +102,7 @@ small { font-size: var(--text-sm); }
 Definir la escala una vez y reutilizarla en todo el proyecto.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -143,7 +143,7 @@ p { line-height: 2.5; }
 - Nunca uses `px` para line-height — usa valores sin unidad
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -178,7 +178,7 @@ p, li, blockquote {
 ```
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -219,7 +219,7 @@ body {
 ⚠️ Carga solo los pesos que vas a usar. Cada peso extra = más bytes descargados.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -253,7 +253,7 @@ body {
 **Cuándo usar:** apps de productividad, dashboards, proyectos que priorizan velocidad.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -296,7 +296,7 @@ body {
 **Tip:** Google Fonts tiene sugerencias de pairing en cada fuente.
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
@@ -327,7 +327,7 @@ layout: default-y-center
 ❌ No pongas texto claro sobre fondo claro (contraste insuficiente)
 
 ::header::
-Semana 9: Diseño Web
+Semana 7: Diseño Web
 
 ::footer::
 {{ $page }} / {{ $nav.total }}
