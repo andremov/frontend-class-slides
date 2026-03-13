@@ -90,6 +90,8 @@ Configurar React Router con estas rutas mínimas:
 
 La navegación interna debe usar **`Link` o `NavLink`** (no `<a href>` para rutas internas).
 
+El **`<Navbar />`** debe ser visible en **todas las rutas** (usar layout route o colocarlo fuera de `<Routes>`).
+
 ::header::
 Taller 03
 
@@ -109,6 +111,11 @@ La vista `/login` debe incluir:
 - Formulario visual con email y password
 - Botón de "Ingresar"
 - Mensaje de ayuda/microcopy (ej: "Solo interfaz, no valida credenciales")
+
+**Comportamiento UX obligatorio:**
+
+- El botón **"Ingresar" debe estar deshabilitado** mientras los campos estén vacíos
+- Al hacer clic en "Ingresar", los **inputs deben deshabilitarse** (simular envío)
 
 No deben conectar backend ni validar usuario real.
 
@@ -149,6 +156,12 @@ layout: default-y-center
 ✅ `Routes` + `Route` para cada vista requerida
 
 ✅ Ruta `/login` implementada como interfaz (sin auth real)
+
+✅ **Header (`<Navbar />`) visible en todas las rutas**
+
+✅ Botón de login **deshabilitado** si los campos están vacíos
+
+✅ Inputs **deshabilitados** después de enviar el formulario
 
 ✅ Ruta `*` para 404
 
