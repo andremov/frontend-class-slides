@@ -2,12 +2,12 @@
 theme: ../../theme
 transition: none
 layout: cover
-title: Taller 03 - React y Data Fetching
+title: Taller 03 - React Router y UX
 exportFilename: 23-taller-03
 ---
 
 # Taller 03
-## React — Data Fetching
+## React — Routing, Vistas y Login (UI)
 
 ✏️ 2026-01
 
@@ -18,34 +18,11 @@ layout: default-y-center
 ## Qué hay que hacer?
 
 ::contents::
-A partir de la **imagen de referencia** que se les suministra, deben recrear la página como una aplicación de **React** usando Vite.
+Deben tomar la **misma referencia visual del Taller 02** y convertirla en una SPA con **múltiples vistas** usando **React Router**.
 
-La app debe **consumir una API pública gratuita** para obtener los datos que se muestran en las tarjetas — no se aceptan datos hardcodeados.
+No deben implementar autenticación real. Solo deben construir la **UI y navegación** de las rutas `/login`, `/cursos`, y `/nosotros`.
 
-::header::
-Taller 03
-
-::footer::
-{{ $page }} / {{ $nav.total }}
-
----
-layout: default-y-center
----
-
-## La API
-
-::contents::
-Deben usar una **API pública gratuita** (sin API key, sin registro).
-
-Algunas opciones sugeridas:
-
-| API | URL | Datos disponibles |
-|-----|-----|-------------------|
-| REST Countries | `https://restcountries.com/v3.1/all` | Países, banderas, capitales, población |
-| PokeAPI | `https://pokeapi.co/api/v2/pokemon?limit=20` | Pokémon, sprites, tipos |
-| Open Library | `https://openlibrary.org/search.json?q=programacion` | Libros, autores, portadas |
-
-Pueden proponer cualquier otra API gratuita — con aprobación del profesor.
+Cada seccion original ahora tiene su propia ruta, y `/login` es una nueva ruta.
 
 ::header::
 Taller 03
@@ -68,11 +45,27 @@ npm create vite@latest taller-03 -- --template react
 cd taller-03
 npm install
 
+# Instalar React Router v7
+npm install react-router
+
 # Iniciar el servidor
 npm run dev
 ```
 
-Limpiar el contenido de `App.jsx` y `App.css` antes de empezar.
+::header::
+Taller 03
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+## Paso 2 — Estructura mínima
+
+::contents::
+Crear archivos separados para **views**, **componentes** y **rutas**:
 
 ::header::
 Taller 03
@@ -84,20 +77,18 @@ Taller 03
 layout: default-y-center
 ---
 
-## Paso 2 — Estructura de componentes
+## Paso 3 — Rutas obligatorias
 
 ::contents::
-Crear un archivo `.jsx` por cada componente en la carpeta `src/`:
+Configurar React Router con estas rutas mínimas:
 
-```
-src/
-├── App.jsx          ← fetch, estados, filtrado
-├── Navbar.jsx
-├── SearchBar.jsx    ← input controlado (busqueda)
-└── ItemCard.jsx     ← props: imagen, nombre, detalle1, detalle2
-```
+- `/` → vista principal
+- `/cursos`
+- `/nosotros`
+- `/login` (solo UI)
+- `*` → 404
 
-`App.jsx` ensambla todo y le pasa los datos a los demás componentes.
+La navegación interna debe usar **`Link` o `NavLink`** (no `<a href>` para rutas internas).
 
 ::header::
 Taller 03
@@ -109,37 +100,17 @@ Taller 03
 layout: default-y-center
 ---
 
-## Paso 3 — Fetch y estados
+## Ruta /login (sin lógica real)
 
 ::contents::
-Tres estados obligatorios en `App.jsx`:
+La vista `/login` debe incluir:
 
-```jsx
-const [datos, setDatos] = useState([]);
-const [cargando, setCargando] = useState(true);
-const [error, setError] = useState(null);
-```
+- Título claro
+- Formulario visual con email y password
+- Botón de "Ingresar"
+- Mensaje de ayuda/microcopy (ej: "Solo interfaz, no valida credenciales")
 
-El fetch va dentro de `useEffect` al montar el componente:
-
-```jsx
-useEffect(() => {
-  async function cargar() {
-    try {
-      const res = await fetch('https://...');
-      const data = await res.json();
-      setDatos(data);
-    } catch (e) {
-      setError('No se pudo cargar la información.');
-    } finally {
-      setCargando(false);
-    }
-  }
-  cargar();
-}, []);
-```
-
-Mostrar un mensaje de carga y uno de error en la UI.
+No deben conectar backend ni validar usuario real.
 
 ::header::
 Taller 03
@@ -151,22 +122,10 @@ Taller 03
 layout: default-y-center
 ---
 
-## Paso 4 — Filtrado
+## UX/UI esperada (Semana 7)
 
 ::contents::
-Agregar un estado `busqueda` y filtrar el array antes de renderizar:
-
-```jsx
-const [busqueda, setBusqueda] = useState('');
-
-const datosFiltrados = datos.filter((item) =>
-  item.nombre.toLowerCase().includes(busqueda.toLowerCase())
-);
-```
-
-Pasar `busqueda` y `setBusqueda` como props al componente `<SearchBar />`.
-
-Renderizar `datosFiltrados` en lugar de `datos`.
+Aplicar criterios de diseño vistos en Semana 7.
 
 ::header::
 Taller 03
@@ -183,21 +142,21 @@ layout: default-y-center
 ::contents::
 ✅ Proyecto creado con **Vite + React**
 
-✅ **API pública gratuita** (sin API key)
+✅ Instalación y uso de **`react-router`**
 
-✅ `useEffect` para el fetch al montar el componente
+✅ `BrowserRouter` en `main.jsx`
 
-✅ Estados: `cargando`, `error`, `datos`
+✅ `Routes` + `Route` para cada vista requerida
 
-✅ UI visible de **loading** y **error**
+✅ Ruta `/login` implementada como interfaz (sin auth real)
 
-✅ **Búsqueda/filtrado** funcional en tiempo real
+✅ Ruta `*` para 404
 
-✅ Componentes separados en archivos `.jsx`
-
-❌ No se aceptan datos hardcodeados
+✅ Componentes y vistas en archivos separados `.jsx`
 
 ❌ No se acepta todo en un solo componente
+
+❌ No se acepta navegación interna con `<a href>`
 
 ::header::
 Taller 03
@@ -220,11 +179,11 @@ layout: default-y-center
 📤 **Cómo entregar:** subir el `.zip` al aula virtual
 
 **Criterios de evaluación:**
-- Similitud visual con la referencia
-- Fetch correcto con `useEffect`
-- Manejo de estados: loading, error, datos
-- Componentes separados en `.jsx`
-- Filtrado funcional
+- Similitud visual con la referencia base (Taller 02)
+- Configuración correcta de rutas y navegación
+- Ruta `/login` completa a nivel de UI
+- Calidad de estructura de componentes/vistas
+- Aplicación de criterios UX de Semana 7
 
 ::header::
 Taller 03

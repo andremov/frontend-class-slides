@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MundoInfo - Explorador de Países</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      /* ── Navbar ─────────────────────────────────── */
+      nav {
+        background-color: #1a1a2e;
+        padding: 16px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .nav-logo {
+        color: #e94560;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: 1px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 24px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        color: #ccc;
+        text-decoration: none;
+        font-size: 15px;
+        transition: color 0.2s;
+      }
+
+      .nav-links a:hover {
+        color: white;
+      }
+
+      /* ── Header / Search ────────────────────────── */
+      .search-header {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+        color: white;
+        text-align: center;
+        padding: 64px 20px;
+      }
+
+      .search-header h1 {
+        font-size: 44px;
+        margin-bottom: 12px;
+      }
+
+      .search-header h1 span {
+        color: #e94560;
+      }
+
+      .search-header p {
+        color: #aaa;
+        font-size: 17px;
+        margin-bottom: 32px;
+      }
+
+      .search-box {
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        max-width: 520px;
+        margin: 0 auto;
+      }
+
+      .search-box input {
+        flex: 1;
+        padding: 14px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px 0 0 8px;
+        outline: none;
+        background: #fff;
+        color: #333;
+      }
+
+      .search-box button {
+        background-color: #e94560;
+        color: white;
+        border: none;
+        padding: 14px 24px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 0 8px 8px 0;
+        transition: background-color 0.2s;
+      }
+
+      .search-box button:hover {
+        background-color: #c73652;
+      }
+
+      /* ── Results section ────────────────────────── */
+      .results-section {
+        padding: 56px 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .results-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+      }
+
+      .results-title {
+        font-size: 24px;
+        color: #1a1a2e;
+        font-weight: bold;
+      }
+
+      .results-count {
+        color: #888;
+        font-size: 15px;
+      }
+
+      /* ── Country Cards Grid ─────────────────────── */
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+      }
+
+      /* ── CountryCard ────────────────────────────── */
+      .country-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+
+      .country-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+      }
+
+      .card-flag {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .card-body {
+        padding: 20px;
+      }
+
+      .card-name {
+        font-size: 20px;
+        font-weight: bold;
+        color: #1a1a2e;
+        margin-bottom: 12px;
+      }
+
+      .card-detail {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 6px;
+      }
+
+      .card-detail span {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .card-region {
+        display: inline-block;
+        margin-top: 12px;
+        background-color: #f0f2f5;
+        color: #1a1a2e;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 4px 12px;
+        border-radius: 20px;
+      }
+
+      /* ── Loading state (visual reference) ──────── */
+      .loading-container {
+        display: none; /* shown in React when cargando === true */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 20px;
+        color: #888;
+        gap: 16px;
+      }
+
+      .spinner {
+        width: 48px;
+        height: 48px;
+        border: 4px solid #e0e0e0;
+        border-top-color: #e94560;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+
+      /* ── Error state (visual reference) ─────────── */
+      .error-container {
+        display: none; /* shown in React when error !== null */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 20px;
+        color: #e94560;
+        gap: 12px;
+        text-align: center;
+      }
+
+      .error-icon {
+        font-size: 48px;
+      }
+
+      /* ── Footer ─────────────────────────────────── */
+      footer {
+        background-color: #1a1a2e;
+        color: #777;
+        text-align: center;
+        padding: 32px 20px;
+        font-size: 14px;
+      }
+
+      footer span {
+        color: #e94560;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- ════════════════════════════════════════════
+         Componente: <Navbar />
+         Props: ninguna
+    ═══════════════════════════════════════════════ -->
+    <nav>
+      <a href="#" class="nav-logo">MundoInfo</a>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Regiones</a></li>
+        <li><a href="#">Acerca de</a></li>
+      </ul>
+    </nav>
+
+    <!-- ════════════════════════════════════════════
+         Componente: <SearchHeader />
+         State: busqueda (string)
+         El input filtra las tarjetas en tiempo real
+    ═══════════════════════════════════════════════ -->
+    <header class="search-header">
+      <h1>Explora el <span>Mundo</span></h1>
+      <p>Busca cualquier país y descubre su información</p>
+      <div class="search-box">
+        <input type="text" placeholder="Buscar país..." />
+        <button>Buscar</button>
+      </div>
+    </header>
+
+    <!-- ════════════════════════════════════════════
+         Estado de carga — mostrar mientras cargando === true
+         (oculto en la referencia estática)
+    ═══════════════════════════════════════════════ -->
+    <div class="loading-container">
+      <div class="spinner"></div>
+      <p>Cargando países...</p>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         Estado de error — mostrar cuando error !== null
+         (oculto en la referencia estática)
+    ═══════════════════════════════════════════════ -->
+    <div class="error-container">
+      <div class="error-icon">⚠️</div>
+      <p>No se pudo cargar la información.</p>
+      <p>Verifica tu conexión e intenta de nuevo.</p>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         Componente: <CountryCard />
+         Props: bandera, nombre, capital, region, poblacion
+         (renderizado para cada elemento del array de datos)
+    ═══════════════════════════════════════════════ -->
+    <main class="results-section">
+      <div class="results-header">
+        <h2 class="results-title">Países</h2>
+        <span class="results-count">Mostrando 6 resultados</span>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="country-card">
+          <img class="card-flag" src="https://flagcdn.com/w640/co.png" alt="Bandera de Colombia" />
+          <div class="card-body">
+            <div class="card-name">Colombia</div>
+            <div class="card-detail">Capital: <span>Bogotá</span></div>
+            <div class="card-detail">Población: <span>51,874,024</span></div>
+            <span class="card-region">América del Sur</span>
+          </div>
+        </div>
+
+        <div class="country-card">
+          <img class="card-flag" src="https://flagcdn.com/w640/es.png" alt="Bandera de España" />
+          <div class="card-body">
+            <div class="card-name">España</div>
+            <div class="card-detail">Capital: <span>Madrid</span></div>
+            <div class="card-detail">Población: <span>47,351,567</span></div>
+            <span class="card-region">Europa</span>
+          </div>
+        </div>
+
+        <div class="country-card">
+          <img class="card-flag" src="https://flagcdn.com/w640/mx.png" alt="Bandera de México" />
+          <div class="card-body">
+            <div class="card-name">México</div>
+            <div class="card-detail">Capital: <span>Ciudad de México</span></div>
+            <div class="card-detail">Población: <span>128,932,753</span></div>
+            <span class="card-region">América del Norte</span>
+          </div>
+        </div>
+
+        <div class="country-card">
+          <img class="card-flag" src="https://flagcdn.com/w640/jp.png" alt="Bandera de Japón" />
+          <div class="card-body">
+            <div class="card-name">Japón</div>
+            <div class="card-detail">Capital: <span>Tokio</span></div>
+            <div class="card-detail">Población: <span>125,681,593</span></div>
+            <span class="card-region">Asia</span>
+          </div>
+        </div>
+
+        <div class="country-card">
+          <img class="card-flag" src="https://flagcdn.com/w640/br.png" alt="Bandera de Brasil" />
+          <div class="card-body">
+            <div class="card-name">Brasil</div>
+            <div class="card-detail">Capital: <span>Brasilia</span></div>
+            <div class="card-detail">Población: <span>215,353,593</span></div>
+            <span class="card-region">América del Sur</span>
+          </div>
+        </div>
+
+        <div class="country-card">
+          <img class="card-flag" src="https://flagcdn.com/w640/fr.png" alt="Bandera de Francia" />
+          <div class="card-body">
+            <div class="card-name">Francia</div>
+            <div class="card-detail">Capital: <span>París</span></div>
+            <div class="card-detail">Población: <span>67,391,582</span></div>
+            <span class="card-region">Europa</span>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- ════════════════════════════════════════════
+         Componente: <Footer />
+         Props: ninguna
+    ═══════════════════════════════════════════════ -->
+    <footer>
+      <p>© 2026 <span>MundoInfo</span>. Taller 03 — React + Data Fetching.</p>
+    </footer>
+
+  </body>
+</html>
